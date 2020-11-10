@@ -1,8 +1,28 @@
 ---
+
+# Temporary fix
+# First task fails always. execute below steps manually to enable root user login and rerun
+
+# systemctl stop mariadb
+# systemctl status mariadb
+# mysqld_safe --skip-grant-tables &
+# systemctl status mariadb
+# mysql
+# In mysql shell
+  # UPDATE mysql.user SET Password=PASSWORD('') WHERE User='root';
+  # FLUSH PRIVILEGES;
+  # exit
+# mysqladmin -u root -p shutdown
+# systemctl start mariadb
+# systemctl status mariadb
+
 - name: Create the {{ db_name }} database ({{ database }})
   mysql_db:
     name: "{{ db_name }}"
     encoding: "{{ db_encoding | default(omit) }}"
+    login_unix_socket: /var/lib/mysql/mysql.sock
+    login_user: "root"
+    login_password: ""
     state: present
 
 - name: Create the {{ db_username }} database user and host based access ({{ database }})
