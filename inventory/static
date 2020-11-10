@@ -20,6 +20,3 @@ worker02 ansible_host=10.17.193.16 ansible_user=systest ansible_ssh_private_key_
 
 [worker3]
 worker03 ansible_host=10.17.193.17 ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
-
-[worker4]
-worker04 ansible_host=10.17.193.18 ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
