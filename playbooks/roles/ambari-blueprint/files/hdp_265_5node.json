@@ -178,13 +178,6 @@
       }
     },
     {
-      "storm-env": {
-        "properties": {
-          "jmxremote_port": "26431"
-        }
-      }
-    },
-    {
       "ams-site": {
         "properties": {
           "timeline.metrics.service.rpc.address": "0.0.0.0:20200"
@@ -358,28 +351,6 @@
       }
     },
     {
-      "druid-common": {
-        "properties": {
-          "druid.metadata.storage.connector.connectURI": "jdbc:mysql://%HOSTGROUP::host_group_2%:3306/druid?createDatabaseIfNotExist=true",
-          "druid.metadata.storage.type": "mysql",
-          "druid.metadata.storage.connector.user": "druid",
-          "druid.metadata.storage.connector.password": "druid"
-        }
-      }
-    },
-    {
-      "druid-env": {
-        "properties_attributes": {},
-        "properties": {
-          "druid.coordinator.jvm.heap.memory": "2048",
-          "druid.overlord.jvm.heap.memory": "512",
-          "druid.router.jvm.heap.memory": "512",
-          "druid.historical.jvm.heap.memory": "8192",
-          "druid.broker.jvm.heap.memory": "4096"
-        }
-      }
-    },
-    {
       "admin-properties": {
         "properties": {
           "DB_FLAVOR": "MYSQL",
@@ -463,9 +434,6 @@
           "name": "TEZ_CLIENT"
         },
         {
-          "name": "PIG"
-        },
-        {
           "name": "ZOOKEEPER_CLIENT"
         },
         {
@@ -473,9 +441,6 @@
         },
         {
           "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SLIDER"
         },
         {
           "name": "SPARK2_CLIENT"
@@ -491,15 +456,6 @@
         },
         {
           "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "LOGSEARCH_LOGFEEDER"
-        },
-        {
-          "name": "ZOOKEEPER_SERVER"
-        },
-        {
-          "name": "KAFKA_BROKER"
         },
         {
           "name": "JOURNALNODE"
@@ -530,15 +486,9 @@
         },
         {
           "name": "MYSQL_SERVER"
-        },
-        {
-          "name": "DRUID_HISTORICAL"
-        },
-        {
-          "name": "DRUID_MIDDLEMANAGER"
         }
       ],
-      "name": "host_group_1",
+      "name": "master1",
       "cardinality": "1"
     },
     {
@@ -563,9 +513,6 @@
         },
         {
           "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "PIG"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
@@ -596,15 +543,6 @@
         },
         {
           "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "LOGSEARCH_LOGFEEDER"
-        },
-        {
-          "name": "ZOOKEEPER_SERVER"
-        },
-        {
-          "name": "KAFKA_BROKER"
         },
         {
           "name": "JOURNALNODE"
@@ -634,19 +572,13 @@
           "name": "OOZIE_SERVER"
         },
         {
-          "name": "DRUID_HISTORICAL"
-        },
-        {
-          "name": "DRUID_MIDDLEMANAGER"
-        },
-        {
           "name": "RANGER_ADMIN"
         },
         {
           "name": "RANGER_USERSYNC"
         }
       ],
-      "name": "host_group_2",
+      "name": "master2",
       "cardinality": "1"
     },
     {
@@ -673,9 +605,6 @@
           "name": "TEZ_CLIENT"
         },
         {
-          "name": "PIG"
-        },
-        {
           "name": "ZOOKEEPER_CLIENT"
         },
         {
@@ -683,9 +612,6 @@
         },
         {
           "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SLIDER"
         },
         {
           "name": "SPARK2_CLIENT"
@@ -704,9 +630,6 @@
         },
         {
           "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "LOGSEARCH_LOGFEEDER"
         },
         {
           "name": "ZOOKEEPER_SERVER"
@@ -721,13 +644,7 @@
           "name": "HBASE_MASTER"
         },
         {
-          "name": "STORM_UI_SERVER"
-        },
-        {
           "name": "DRPC_SERVER"
-        },
-        {
-          "name": "NIMBUS"
         },
         {
           "name": "METRICS_COLLECTOR"
@@ -736,19 +653,10 @@
           "name": "METRICS_GRAFANA"
         },
         {
-          "name": "LOGSEARCH_SERVER"
-        },
-        {
           "name": "INFRA_SOLR"
-        },
-        {
-          "name": "DRUID_HISTORICAL"
-        },
-        {
-          "name": "DRUID_MIDDLEMANAGER"
         }
       ],
-      "name": "host_group_3",
+      "name": "worker1",
       "cardinality": "1"
     },
     {
@@ -775,9 +683,6 @@
           "name": "TEZ_CLIENT"
         },
         {
-          "name": "PIG"
-        },
-        {
           "name": "ZOOKEEPER_CLIENT"
         },
         {
@@ -785,9 +690,6 @@
         },
         {
           "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SLIDER"
         },
         {
           "name": "SPARK2_CLIENT"
@@ -806,9 +708,6 @@
         },
         {
           "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "LOGSEARCH_LOGFEEDER"
         },
         {
           "name": "INFRA_SOLR"
@@ -823,25 +722,13 @@
           "name": "LIVY2_SERVER"
         },
         {
-          "name": "DRUID_HISTORICAL"
+          "name": "ZOOKEEPER_SERVER"
         },
         {
-          "name": "DRUID_MIDDLEMANAGER"
-        },
-        {
-          "name": "DRUID_ROUTER"
-        },
-        {
-          "name": "DRUID_BROKER"
-        },
-        {
-          "name": "DRUID_COORDINATOR"
-        },
-        {
-          "name": "DRUID_OVERLORD"
+          "name": "KAFKA_BROKER"
         }
       ],
-      "name": "host_group_4",
+      "name": "worker2",
       "cardinality": "1"
     },
     {
@@ -868,9 +755,6 @@
           "name": "TEZ_CLIENT"
         },
         {
-          "name": "PIG"
-        },
-        {
           "name": "ZOOKEEPER_CLIENT"
         },
         {
@@ -878,9 +762,6 @@
         },
         {
           "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SLIDER"
         },
         {
           "name": "SPARK2_CLIENT"
@@ -898,19 +779,16 @@
           "name": "SUPERVISOR"
         },
         {
+          "name": "ZOOKEEPER_SERVER"
+        },
+        {
           "name": "METRICS_MONITOR"
         },
         {
-          "name": "LOGSEARCH_LOGFEEDER"
-        },
-        {
-          "name": "DRUID_HISTORICAL"
-        },
-        {
-          "name": "DRUID_MIDDLEMANAGER"
+          "name": "KAFKA_BROKER"
         }
       ],
-      "name": "host_group_5",
+      "name": "worker3",
       "cardinality": "1"
     }
   ],
