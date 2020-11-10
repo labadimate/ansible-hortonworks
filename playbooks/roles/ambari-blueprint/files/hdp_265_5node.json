@@ -387,17 +387,9 @@
           "is_external_solrCloud_kerberos": "false",
           "ranger_admin_password": "rangerpassword",
           "xasecure.audit.destination.hdfs": "false",
-          {% if secure %}
-          "ranger-storm-plugin-enabled": "Yes",
           "ranger-kafka-plugin-enabled": "Yes",
           "ranger-hive-plugin-enabled": "Yes",
           "ranger-hdfs-plugin-enabled": "Yes"
-          {% else %}
-          "ranger-storm-plugin-enabled": "No",
-          "ranger-kafka-plugin-enabled": "No",
-          "ranger-hive-plugin-enabled": "No",
-          "ranger-hdfs-plugin-enabled": "No"
-          {% endif %}
         }
       }
     },
@@ -411,6 +403,8 @@
   ],
   "host_groups": [
     {
+      "name": "master1",
+      "configurations" : [],
       "components": [
         {
           "name": "HDFS_CLIENT"
@@ -487,11 +481,11 @@
         {
           "name": "MYSQL_SERVER"
         }
-      ],
-      "name": "master1",
-      "cardinality": "1"
+      ]
     },
     {
+      "name": "master2",
+      "configurations" : [],
       "components": [
         {
           "name": "HDFS_CLIENT"
@@ -577,11 +571,11 @@
         {
           "name": "RANGER_USERSYNC"
         }
-      ],
-      "name": "master2",
-      "cardinality": "1"
+      ]
     },
     {
+      "name": "worker1",
+      "configurations" : [],
       "components": [
         {
           "name": "HDFS_CLIENT"
@@ -655,11 +649,11 @@
         {
           "name": "INFRA_SOLR"
         }
-      ],
-      "name": "worker1",
-      "cardinality": "1"
+      ]
     },
     {
+      "name": "worker2",
+      "configurations" : [],
       "components": [
         {
           "name": "HDFS_CLIENT"
@@ -727,11 +721,11 @@
         {
           "name": "KAFKA_BROKER"
         }
-      ],
-      "name": "worker2",
-      "cardinality": "1"
+      ]
     },
     {
+      "name": "worker3",
+      "configurations" : [],
       "components": [
         {
           "name": "HDFS_CLIENT"
@@ -787,13 +781,10 @@
         {
           "name": "KAFKA_BROKER"
         }
-      ],
-      "name": "worker3",
-      "cardinality": "1"
+      ]
     }
   ],
   "Blueprints": {
-    "blueprint_name": "chelsea",
     "stack_name": "HDP",
     "stack_version": "2.6"
   }
