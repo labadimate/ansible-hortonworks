@@ -780,6 +780,9 @@
         },
         {
           "name": "KAFKA_BROKER"
+        },
+        {
+          "name": "AMBARI_SERVER"
         }
       ]
     }
