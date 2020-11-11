@@ -178,6 +178,13 @@
       }
     },
     {
+      "storm-env": {
+        "properties": {
+          "jmxremote_port": "26431"
+        }
+      }
+    },
+    {
       "ams-site": {
         "properties": {
           "timeline.metrics.service.rpc.address": "0.0.0.0:20200"
@@ -476,6 +483,9 @@
           "name": "ZEPPELIN_MASTER"
         },
         {
+          "name": "SUPERVISOR"
+        },
+        {
           "name": "MYSQL_SERVER"
         }
       ]
@@ -560,6 +570,9 @@
           "name": "OOZIE_SERVER"
         },
         {
+          "name": "SUPERVISOR"
+        },
+        {
           "name": "RANGER_ADMIN"
         },
         {
@@ -638,6 +651,9 @@
           "name": "METRICS_GRAFANA"
         },
         {
+          "name": "SUPERVISOR"
+        },
+        {
           "name": "INFRA_SOLR"
         }
       ]
@@ -704,7 +720,16 @@
           "name": "LIVY2_SERVER"
         },
         {
+          "name": "STORM_UI_SERVER"
+        },
+        {
+          "name": "NIMBUS"
+        },
+        {
           "name": "ZOOKEEPER_SERVER"
+        },
+        {
+          "name": "SUPERVISOR"
         },
         {
           "name": "KAFKA_BROKER"
@@ -759,6 +784,9 @@
         },
         {
           "name": "ZOOKEEPER_SERVER"
+        },
+        {
+          "name": "SUPERVISOR"
         },
         {
           "name": "METRICS_MONITOR"
