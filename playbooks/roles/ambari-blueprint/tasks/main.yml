@@ -72,7 +72,6 @@
 - name: Print the cluster creation template
   debug:
     var: cluster_template
-    verbosity: 1
 
 - name: Delete any existing blueprint called {{ blueprint_name }}
   uri:

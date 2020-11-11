@@ -2,21 +2,21 @@
   "configurations": [
     {
       "kerberos-env": {
-        "properties_attributes" : {},
-        "properties" : {
-          "realm" : "HDPCLDR.COM",
-          "kdc_type" : "mit-kdc",
-          "kdc_host" : "%HOSTGROUP::worker3%",
-          "admin_server_host" : "%HOSTGROUP::worker3%"
+        "properties_attributes": {},
+        "properties": {
+          "realm": "HDPCLDR.COM",
+          "kdc_type": "mit-kdc",
+          "kdc_host": "%HOSTGROUP::worker3%",
+          "admin_server_host": "%HOSTGROUP::worker3%"
         }
       }
     },
     {
       "krb5-conf": {
-        "properties_attributes" : {},
-        "properties" : {
-          "domains" : "HDPCLDR.COM",
-          "manage_krb5_conf" : "true"
+        "properties_attributes": {},
+        "properties": {
+          "domains": "HDPCLDR.COM",
+          "manage_krb5_conf": "true"
         }
       }
     },
