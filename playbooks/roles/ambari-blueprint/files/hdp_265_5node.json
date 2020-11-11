@@ -446,9 +446,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "METRICS_MONITOR"
         },
         {
@@ -531,9 +528,6 @@
         },
         {
           "name": "HBASE_REGIONSERVER"
-        },
-        {
-          "name": "SUPERVISOR"
         },
         {
           "name": "METRICS_MONITOR"
@@ -620,9 +614,6 @@
           "name": "HBASE_REGIONSERVER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "METRICS_MONITOR"
         },
         {
@@ -698,9 +689,6 @@
           "name": "HBASE_REGIONSERVER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "METRICS_MONITOR"
         },
         {
@@ -768,9 +756,6 @@
         },
         {
           "name": "HBASE_REGIONSERVER"
-        },
-        {
-          "name": "SUPERVISOR"
         },
         {
           "name": "ZOOKEEPER_SERVER"
