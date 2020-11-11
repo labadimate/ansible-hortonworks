@@ -1,6 +1,26 @@
 {
   "configurations": [
     {
+      "kerberos-env": {
+        "properties_attributes" : {},
+        "properties" : {
+          "realm" : "HDPCLDR.COM",
+          "kdc_type" : "mit-kdc",
+          "kdc_host" : "%HOSTGROUP::worker3%",
+          "admin_server_host" : "%HOSTGROUP::worker3%"
+        }
+      }
+    },
+    {
+      "krb5-conf": {
+        "properties_attributes" : {},
+        "properties" : {
+          "domains" : "HDPCLDR.COM",
+          "manage_krb5_conf" : "true"
+        }
+      }
+    },
+    {
       "core-site": {
         "properties": {
           "fs.defaultFS": "hdfs://chelsea",
@@ -15,7 +35,7 @@
           "fs.s3a.awsSecretAccessKey": "/V+IVzml+2Jqq1bmX73DJFlaMCSgllZuxezGzp6G",
           "fs.s3a.awsAccessKeyId": "AKIAIDZB7JJ5YBYI23KQ",
           "io.compression.codecs": "org.apache.hadoop.io.compress.GzipCodec,org.apache.hadoop.io.compress.DefaultCodec,org.apache.hadoop.io.compress.SnappyCodec",
-          "ha.zookeeper.quorum": "%HOSTGROUP::host_group_1%:2181,%HOSTGROUP::host_group_2%:2181,%HOSTGROUP::host_group_3%:2181",
+          "ha.zookeeper.quorum": "%HOSTGROUP::worker1%:2181,%HOSTGROUP::worker2%:2181,%HOSTGROUP::worker3%:2181",
           "fs.s3a.secret.key": "/V+IVzml+2Jqq1bmX73DJFlaMCSgllZuxezGzp6G",
           "hadoop.proxyuser.root.hosts": "*",
           "hadoop.proxyuser.hive.hosts": "*",
@@ -48,8 +68,8 @@
     {
       "hdfs-site": {
         "properties": {
-          "dfs.namenode.rpc-address.chelsea.nn1": "%HOSTGROUP::host_group_1%:8020",
-          "dfs.namenode.rpc-address.chelsea.nn2": "%HOSTGROUP::host_group_2%:8020",
+          "dfs.namenode.rpc-address.chelsea.nn1": "%HOSTGROUP::master1%:8020",
+          "dfs.namenode.rpc-address.chelsea.nn2": "%HOSTGROUP::master2%:8020",
           "dfs.http.policy": "HTTP_ONLY",
           "dfs.ha.fencing.methods": "shell(/bin/true)",
           "dfs.replication": "3",
@@ -64,15 +84,15 @@
           "dfs.datanode.https.address": "0.0.0.0:50475",
           "dfs.journalnode.http-address": "0.0.0.0:8480",
           "dfs.datanode.data.dir": "/grid/1/hadoop/hdfs/data,/grid/2/hadoop/hdfs/data,/grid/3/hadoop/hdfs/data",
-          "dfs.namenode.shared.edits.dir": "qjournal://%HOSTGROUP::host_group_1%:8485,%HOSTGROUP::host_group_2%:8485,%HOSTGROUP::host_group_3%:8485/chelsea",
+          "dfs.namenode.shared.edits.dir": "qjournal://%HOSTGROUP::master1%:8485,%HOSTGROUP::master2%:8485,%HOSTGROUP::worker1%:8485/chelsea",
           "dfs.namenode.checkpoint.edits.dir": "${dfs.namenode.checkpoint.dir}",
-          "dfs.namenode.http-address.chelsea.nn1": "%HOSTGROUP::host_group_1%:50070",
+          "dfs.namenode.http-address.chelsea.nn1": "%HOSTGROUP::master1%:50070",
           "dfs.client.failover.proxy.provider.chelsea": "org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider",
           "dfs.hosts.exclude": "/etc/hadoop/conf/dfs.exclude",
-          "dfs.namenode.http-address.chelsea.nn2": "%HOSTGROUP::host_group_2%:50070",
+          "dfs.namenode.http-address.chelsea.nn2": "%HOSTGROUP::master2%:50070",
           "dfs.namenode.name.dir.restore": "true",
-          "dfs.namenode.https-address.chelsea.nn2": "%HOSTGROUP::host_group_2%:50470",
-          "dfs.namenode.https-address.chelsea.nn1": "%HOSTGROUP::host_group_1%:50470",
+          "dfs.namenode.https-address.chelsea.nn2": "%HOSTGROUP::master2%:50470",
+          "dfs.namenode.https-address.chelsea.nn1": "%HOSTGROUP::master1%:50470",
           "dfs.namenode.checkpoint.txns": "1000000",
           "dfs.journalnode.edits.dir": "/grid/1/hadoop/hdfs/journal",
           "dfs.namenode.accesstime.precision": "0",
@@ -86,23 +106,23 @@
     {
       "yarn-site": {
         "properties": {
-          "yarn.resourcemanager.zk-address": "%HOSTGROUP::host_group_1%:2181,%HOSTGROUP::host_group_2%:2181,%HOSTGROUP::host_group_3%:2181",
-          "yarn.resourcemanager.webapp.address.rm2": "%HOSTGROUP::host_group_2%:8088",
-          "yarn.resourcemanager.address": "%HOSTGROUP::host_group_1%:8050",
-          "yarn.resourcemanager.webapp.address.rm1": "%HOSTGROUP::host_group_1%:8088",
+          "yarn.resourcemanager.zk-address": "%HOSTGROUP::worker1%:2181,%HOSTGROUP::worker2%:2181,%HOSTGROUP::worker3%:2181",
+          "yarn.resourcemanager.webapp.address.rm2": "%HOSTGROUP::master2%:8088",
+          "yarn.resourcemanager.address": "%HOSTGROUP::master1%:8050",
+          "yarn.resourcemanager.webapp.address.rm1": "%HOSTGROUP::master1%:8088",
           "yarn.timeline-service.leveldb-timeline-store.start-time-read-cache-size": "10000",
           "yarn.resourcemanager.ha.rm-ids": "rm1,rm2",
           "yarn.resourcemanager.ha.automatic-failover.zk-base-path": "/yarn-leader-election",
           "yarn.resourcemanager.scheduler.monitor.enable": "true",
-          "yarn.resourcemanager.admin.address": "%HOSTGROUP::host_group_1%:8141",
+          "yarn.resourcemanager.admin.address": "%HOSTGROUP::master1%:8141",
           "yarn.resourcemanager.bind-host": "0.0.0.0",
-          "yarn.resourcemanager.resource-tracker.address": "%HOSTGROUP::host_group_1%:8025",
+          "yarn.resourcemanager.resource-tracker.address": "%HOSTGROUP::master1%:8025",
           "yarn.nodemanager.delete.debug-delay-sec": "3600",
           "yarn.nodemanager.address": "0.0.0.0:25454",
-          "yarn.resourcemanager.webapp.address": "%HOSTGROUP::host_group_1%:8088",
+          "yarn.resourcemanager.webapp.address": "%HOSTGROUP::master1%:8088",
           "yarn.nodemanager.resource.memory-mb": "184320",
           "yarn.resourcemanager.ha.enabled": "true",
-          "yarn.resourcemanager.hostname": "%HOSTGROUP::host_group_1%",
+          "yarn.resourcemanager.hostname": "%HOSTGROUP::master1%",
           "yarn.scheduler.minimum-allocation-mb": "1024",
           "yarn.resourcemanager.cluster-id": "yarn-cluster",
           "yarn.timeline-service.leveldb-timeline-store.read-cache-size": "104857600",
@@ -114,13 +134,13 @@
           "yarn.scheduler.maximum-allocation-mb": "184320",
           "yarn.timeline-service.bind-host": "0.0.0.0",
           "yarn.resourcemanager.am.max-attempts": "20",
-          "yarn.resourcemanager.webapp.https.address": "%HOSTGROUP::host_group_1%:8090",
-          "yarn.resourcemanager.hostname.rm2": "%HOSTGROUP::host_group_2%",
-          "yarn.resourcemanager.hostname.rm1": "%HOSTGROUP::host_group_1%",
+          "yarn.resourcemanager.webapp.https.address": "%HOSTGROUP::master1%:8090",
+          "yarn.resourcemanager.hostname.rm2": "%HOSTGROUP::master2%",
+          "yarn.resourcemanager.hostname.rm1": "%HOSTGROUP::master1%",
           "yarn.resourcemanager.work-preserving-recovery.enabled": "true",
           "yarn.resourcemanager.recovery.enabled": "true",
           "yarn.resourcemanager.store.class": "org.apache.hadoop.yarn.server.resourcemanager.recovery.ZKRMStateStore",
-          "yarn.resourcemanager.scheduler.address": "%HOSTGROUP::host_group_1%:8030",
+          "yarn.resourcemanager.scheduler.address": "%HOSTGROUP::master1%:8030",
           "yarn.timeline-service.leveldb-state-store.path": "/grid/1/hadoop/yarn/timeline",
           "yarn.timeline-service.leveldb-timeline-store.path": "/grid/1/hadoop/yarn/timeline"
         }
@@ -128,7 +148,7 @@
     },
     {
       "oozie-env": {
-        "oozie_hostname": "%HOSTGROUP::host_group_1%",
+        "oozie_hostname": "%HOSTGROUP::master1%",
         "oozie_database": "Existing MySQL Database"
       }
     },
@@ -137,7 +157,7 @@
         "oozie.service.JPAService.jdbc.username": "oozie",
         "oozie.service.JPAService.jdbc.password": "oozie",
         "oozie.service.JPAService.jdbc.driver": "com.mysql.jdbc.Driver",
-        "oozie.service.JPAService.jdbc.url": "jdbc:mysql://%HOSTGROUP::host_group_2%/oozie",
+        "oozie.service.JPAService.jdbc.url": "jdbc:mysql://%HOSTGROUP::master2%/oozie",
         "oozie.service.HadoopAccessorService.supported.filesystems": "*",
         "oozie.authentication.kerberos.principal": "*",
         "oozie.service.WorkflowAppService.WorkflowDefinitionMaxLength": "1000000"
@@ -366,7 +386,7 @@
           "db_root_user": "rangerdba",
           "db_host": "localhost",
           "db_root_password": "password",
-          "policymgr_external_url": "http://%HOSTGROUP::host_group_2%:6080"
+          "policymgr_external_url": "http://%HOSTGROUP::master2%:6080"
         }
       }
     },
