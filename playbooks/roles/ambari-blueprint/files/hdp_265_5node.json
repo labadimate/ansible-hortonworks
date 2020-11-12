@@ -5,9 +5,7 @@
         "properties_attributes": {},
         "properties": {
           "realm": "HDPCLDR.COM",
-          "kdc_type": "mit-kdc",
-          "kdc_host": "%HOSTGROUP::worker3%",
-          "admin_server_host": "%HOSTGROUP::worker3%"
+          "kdc_type": "mit-kdc"
         }
       }
     },
