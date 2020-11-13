@@ -43,7 +43,7 @@
           "hadoop.proxyuser.storm-marilyn.groups": "*",
           "hadoop.proxyuser.streamline-marilyn.groups": "*",
           "hadoop.proxyuser.streamline-marilyn.hosts": "*",
-          "fs.s3a.buffer.dir": "/grid/1/s3abufferdir"
+          "fs.s3a.buffer.dir": "/data/1/s3abufferdir"
         }
       }
     },
@@ -74,16 +74,16 @@
           "dfs.ha.fencing.methods": "shell(/bin/true)",
           "dfs.replication": "3",
           "dfs.nameservices": "chelsea",
-          "dfs.namenode.checkpoint.dir": "/grid/1/hadoop/hdfs/namesecondary",
+          "dfs.namenode.checkpoint.dir": "/data/1/hadoop/hdfs/namesecondary",
           "dfs.namenode.handler.count": "40",
           "dfs.https.port": "20470",
           "dfs.replication.max": "50",
-          "dfs.namenode.name.dir": "/grid/1/hadoop/hdfs/namenode,/grid/2/hadoop/hdfs/namenode,/grid/3/hadoop/hdfs/namenode",
+          "dfs.namenode.name.dir": "/data/1/hadoop/hdfs/namenode,/data/2/hadoop/hdfs/namenode,/data/3/hadoop/hdfs/namenode",
           "dfs.namenode.avoid.read.stale.datanode": "true",
           "dfs.namenode.avoid.write.stale.datanode": "true",
           "dfs.datanode.https.address": "0.0.0.0:50475",
           "dfs.journalnode.http-address": "0.0.0.0:8480",
-          "dfs.datanode.data.dir": "/grid/1/hadoop/hdfs/data,/grid/2/hadoop/hdfs/data,/grid/3/hadoop/hdfs/data",
+          "dfs.datanode.data.dir": "/data/1/hadoop/hdfs/data,/data/2/hadoop/hdfs/data,/data/3/hadoop/hdfs/data",
           "dfs.namenode.shared.edits.dir": "qjournal://%HOSTGROUP::master1%:8485,%HOSTGROUP::master2%:8485,%HOSTGROUP::worker1%:8485/chelsea",
           "dfs.namenode.checkpoint.edits.dir": "${dfs.namenode.checkpoint.dir}",
           "dfs.namenode.http-address.chelsea.nn1": "%HOSTGROUP::master1%:50070",
@@ -94,7 +94,7 @@
           "dfs.namenode.https-address.chelsea.nn2": "%HOSTGROUP::master2%:50470",
           "dfs.namenode.https-address.chelsea.nn1": "%HOSTGROUP::master1%:50470",
           "dfs.namenode.checkpoint.txns": "1000000",
-          "dfs.journalnode.edits.dir": "/grid/1/hadoop/hdfs/journal",
+          "dfs.journalnode.edits.dir": "/data/1/hadoop/hdfs/journal",
           "dfs.namenode.accesstime.precision": "0",
           "dfs.ha.namenodes.chelsea": "nn1,nn2",
           "dfs.namenode.safemode.threshold-pct": "1",
@@ -128,8 +128,8 @@
           "yarn.timeline-service.leveldb-timeline-store.read-cache-size": "104857600",
           "yarn.resourcemanager.scheduler.class": "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler",
           "yarn.timeline-service.client.max-retries": "30",
-          "yarn.nodemanager.local-dirs": "/grid/1/hadoop/yarn/local,/grid/2/hadoop/yarn/local,/grid/3/hadoop/yarn/local",
-          "yarn.nodemanager.log-dirs": "/grid/1/hadoop/yarn/local,/grid/2/hadoop/yarn/local,/grid/3/hadoop/yarn/local",
+          "yarn.nodemanager.local-dirs": "/data/1/hadoop/yarn/local,/data/2/hadoop/yarn/local,/data/3/hadoop/yarn/local",
+          "yarn.nodemanager.log-dirs": "/data/1/hadoop/yarn/local,/data/2/hadoop/yarn/local,/data/3/hadoop/yarn/local",
           "yarn.nodemanager.recovery.enabled": "true",
           "yarn.scheduler.maximum-allocation-mb": "184320",
           "yarn.timeline-service.bind-host": "0.0.0.0",
@@ -141,8 +141,8 @@
           "yarn.resourcemanager.recovery.enabled": "true",
           "yarn.resourcemanager.store.class": "org.apache.hadoop.yarn.server.resourcemanager.recovery.ZKRMStateStore",
           "yarn.resourcemanager.scheduler.address": "%HOSTGROUP::master1%:8030",
-          "yarn.timeline-service.leveldb-state-store.path": "/grid/1/hadoop/yarn/timeline",
-          "yarn.timeline-service.leveldb-timeline-store.path": "/grid/1/hadoop/yarn/timeline"
+          "yarn.timeline-service.leveldb-state-store.path": "/data/1/hadoop/yarn/timeline",
+          "yarn.timeline-service.leveldb-timeline-store.path": "/data/1/hadoop/yarn/timeline"
         }
       }
     },
@@ -166,14 +166,14 @@
     {
       "ams-hbase-site": {
         "properties": {
-          "hbase.rootdir": "file:///grid/1/lib/ambari-metrics-collector/hbase"
+          "hbase.rootdir": "file:///data/1/lib/ambari-metrics-collector/hbase"
         }
       }
     },
     {
       "infra-solr-env": {
         "properties": {
-          "infra_solr_datadir": "/grid/1/ambari_infra_solr/data"
+          "infra_solr_datadir": "/data/1/ambari_infra_solr/data"
         }
       }
     },
@@ -373,7 +373,7 @@
           "delete.topic.enable": "true",
           "listeners": "PLAINTEXT://localhost:6667",
           "security.inter.broker.protocol": "PLAINTEXT",
-          "log.dirs": "/grid/1/kafka-logs,/grid/2/kafka-logs,/grid/3/kafka-logs"
+          "log.dirs": "/data/1/kafka-logs,/data/2/kafka-logs,/data/3/kafka-logs"
         }
       }
     },
