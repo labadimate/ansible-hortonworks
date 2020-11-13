@@ -32,7 +32,7 @@ timezone: UTC
 ## java configuration ##
 ########################
 
-java: 'openjdk'                                          # can be set to 'embedded', 'openjdk' or 'oraclejdk'
+java: 'embedded'                                          # can be set to 'embedded', 'openjdk' or 'oraclejdk'
 oraclejdk_options:                                        # only used when java is set to 'oraclejdk'
   base_folder: '/usr/java'                                # the folder where the Java package should be unpacked to
   tarball_location: '/tmp/jdk-8u181-linux-x64.tar.gz'     # the location of the tarball on the remote system or on the Ansible controller
@@ -84,7 +84,7 @@ database_options:
 security: 'mit-kdc'                                          # can be set to 'none', 'mit-kdc', 'ipa' or 'active-directory'
 security_options:
   external_hostname: ''                                   # if this is empty, Ansible will install and prepare the MIT KDC on the Ambari node
-  realm: 'HDPCLDR.COM'
+  realm: 'CLOUDERA.COM'
   admin_principal: 'admin'                                # the Kerberos principal that has the permissions to create new users (don't append the realm)
   admin_password: "{{ default_password }}"
   kdc_master_key: "{{ default_password }}"                # only used when security is set to 'mit-kdc'
@@ -148,7 +148,7 @@ accumulo_security_options:
 
 ambari_admin_user: 'admin'
 ambari_admin_default_password: 'admin'                    # no need to change this (unless the Ambari default changes)
-config_recommendation_strategy: 'NEVER_APPLY'             # choose between 'NEVER_APPLY', 'ONLY_STACK_DEFAULTS_APPLY', 'ALWAYS_APPLY', 'ALWAYS_APPLY_DONT_OVERRIDE_CUSTOM_VALUES'
+config_recommendation_strategy: 'ALWAYS_APPLY_DONT_OVERRIDE_CUSTOM_VALUES'             # choose between 'NEVER_APPLY', 'ONLY_STACK_DEFAULTS_APPLY', 'ALWAYS_APPLY', 'ALWAYS_APPLY_DONT_OVERRIDE_CUSTOM_VALUES'
 
 smartsense:                                               # Hortonworks subscription details (can be left empty if there is no subscription)
   id: ''

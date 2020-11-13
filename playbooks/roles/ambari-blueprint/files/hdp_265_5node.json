@@ -4,10 +4,12 @@
       "kerberos-env": {
         "properties_attributes": {},
         "properties": {
-          "realm": "HDPCLDR.COM",
+          "realm": "CLOUDERA.COM",
           "kdc_type": "mit-kdc",
-          "kdc_host" : "vb0207.halxg.cloudera.com",
-          "admin_server_host" : "vb0207.halxg.cloudera.com"
+          "kdc_hosts" : "vb0207.halxg.cloudera.com",
+          "admin_server_host" : "vb0207.halxg.cloudera.com",
+          "container_dn" : "",
+          "ldap_url" : ""
         }
       }
     },
@@ -15,7 +17,7 @@
       "krb5-conf": {
         "properties_attributes": {},
         "properties": {
-          "domains": "HDPCLDR.COM",
+          "domains": "CLOUDERA.COM",
           "manage_krb5_conf": "true"
         }
       }
@@ -412,7 +414,6 @@
           "is_solrCloud_enabled": "true",
           "is_external_solrCloud_enabled": "false",
           "is_external_solrCloud_kerberos": "false",
-          "ranger_admin_password": "rangerpassword",
           "xasecure.audit.destination.hdfs": "false",
           "ranger-kafka-plugin-enabled": "Yes",
           "ranger-hive-plugin-enabled": "Yes",
