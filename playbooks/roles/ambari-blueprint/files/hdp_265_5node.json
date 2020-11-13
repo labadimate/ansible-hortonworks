@@ -222,7 +222,13 @@
           "hive.auto.convert.join.noconditionaltask.size": "1431655765",
           "hive.compactor.worker.threads": "5",
           "hive.txn.manager": "org.apache.hadoop.hive.ql.lockmgr.DbTxnManager",
-          "hive.exec.dynamic.partition.mode": "nonstrict"
+          "hive.exec.dynamic.partition.mode": "nonstrict",
+          "javax.jdo.option.ConnectionDriverName": "com.mysql.jdbc.Driver",
+          "javax.jdo.option.ConnectionURL": "jdbc:mysql://%HOSTGROUP::worker3%:3306/hive",
+          "ambari.hive.db.schema.name": "hive",
+          "javax.jdo.option.ConnectionUserName": "hive",
+          "javax.jdo.option.ConnectionPassword": "hive",
+          "hive.security.authorization.enabled" : "true"
         }
       }
     },
@@ -398,7 +404,7 @@
           "ranger.audit.source.type": "solr",
           "ranger.jpa.jdbc.driver": "com.mysql.jdbc.Driver",
           "ranger.service.http.enabled": "true",
-          "ranger.jpa.jdbc.url": "jdbc:mysql://localhost/ranger"
+          "ranger.jpa.jdbc.url": "jdbc:mysql://%HOSTGROUP::worker3%/ranger"
         }
       }
     },
