@@ -15,7 +15,7 @@
       "principal" : "{{ security_options.admin_principal }}@{{ security_options.realm | upper }}",
 {% endif %}
       "key" : "{{ security_options.admin_password }}",
-      "type" : "TEMPORARY"
+      "type" : "PERSISTED"
     }
   ],
   "security" : {
