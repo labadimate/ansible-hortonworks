@@ -404,14 +404,14 @@
           "ranger.audit.source.type": "solr",
           "ranger.jpa.jdbc.driver": "com.mysql.jdbc.Driver",
           "ranger.service.http.enabled": "true",
-          "ranger.jpa.jdbc.url": "jdbc:mysql://%HOSTGROUP::worker3%/ranger"
+          "ranger.jpa.jdbc.url": "jdbc:mysql://%HOSTGROUP::worker3%:3306/ranger"
         }
       }
     },
     {
       "ranger-env": {
         "properties": {
-          "ranger_privelege_user_jdbc_url": "jdbc:mysql://localhost",
+          "ranger_privelege_user_jdbc_url": "jdbc:mysql://%HOSTGROUP::worker3%:3306",
           "keyadmin_user_password": "Hortonworks@123",
           "rangerusersync_user_password": "Hortonworks@123",
           "rangertagsync_user_password": "Hortonworks@123",
