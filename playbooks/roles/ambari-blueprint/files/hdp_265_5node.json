@@ -522,9 +522,6 @@
         },
         {
           "name": "SUPERVISOR"
-        },
-        {
-          "name": "MYSQL_SERVER"
         }
       ]
     },
