@@ -151,11 +151,15 @@
     {
       "oozie-env": {
         "oozie_hostname": "%HOSTGROUP::master1%",
-        "oozie_database": "Existing MySQL Database"
+        "oozie_database": "Existing MySQL Database",
+        "oozie_ambari_database" : "MySQL",
+        "oozie_existing_mysql_database" : "MySQL",
+        "oozie_user" : "oozie"
       }
     },
     {
       "oozie-site": {
+        "oozie.db.schema.name" : "oozie",
         "oozie.service.JPAService.jdbc.username": "oozie",
         "oozie.service.JPAService.jdbc.password": "oozie",
         "oozie.service.JPAService.jdbc.driver": "com.mysql.jdbc.Driver",
@@ -238,7 +242,14 @@
           "hive_txn_acid": "on",
           "hive.client.heapsize": "4096",
           "hive.metastore.heapsize": "4096",
-          "hive.heapsize": "4096"
+          "hive.heapsize": "4096",
+          "hive_database" : "Existing MySQL Database",
+          "hive_database_name" : "hive",
+          "hive_database_type" : "mysql",
+          "hive_existing_mysql_database" : "MySQL",
+          "hive_ambari_database": "MySQL",
+          "hive_user" : "hive",
+          "hive_metastore_user_passwd": "hive”
         }
       }
     },
