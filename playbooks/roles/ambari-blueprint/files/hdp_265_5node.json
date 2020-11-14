@@ -249,7 +249,7 @@
           "hive_existing_mysql_database" : "MySQL",
           "hive_ambari_database": "MySQL",
           "hive_user" : "hive",
-          "hive_metastore_user_passwd": "hive”
+          "hive_metastore_user_passwd": "hive"
         }
       }
     },
