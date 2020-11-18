@@ -487,9 +487,6 @@
           "name": "HISTORYSERVER"
         },
         {
-          "name": "HIVE_SERVER"
-        },
-        {
           "name": "ZEPPELIN_MASTER"
         },
         {
@@ -800,6 +797,9 @@
         },
         {
           "name": "HIVE_METASTORE"
+        },
+        {
+          "name": "HIVE_SERVER"
         },
         {
           "name": "SLIDER"
