@@ -228,7 +228,7 @@
           "hive.txn.manager": "org.apache.hadoop.hive.ql.lockmgr.DbTxnManager",
           "hive.exec.dynamic.partition.mode": "nonstrict",
           "javax.jdo.option.ConnectionDriverName": "com.mysql.jdbc.Driver",
-          "javax.jdo.option.ConnectionURL": "jdbc:mysql://%HOSTGROUP::worker3%:3306/hive",
+          "javax.jdo.option.ConnectionURL": "jdbc:mysql://localhost:3306/hive",
           "ambari.hive.db.schema.name": "hive",
           "javax.jdo.option.ConnectionUserName": "hive",
           "javax.jdo.option.ConnectionPassword": "hive",
@@ -510,9 +510,6 @@
         },
         {
           "name": "HISTORYSERVER"
-        },
-        {
-          "name": "HIVE_METASTORE"
         },
         {
           "name": "HIVE_SERVER"
@@ -831,6 +828,9 @@
         },
         {
           "name": "RANGER_USERSYNC"
+        },
+        {
+          "name": "HIVE_METASTORE"
         }
       ]
     }
