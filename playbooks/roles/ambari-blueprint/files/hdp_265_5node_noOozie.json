@@ -494,6 +494,9 @@
         },
         {
           "name": "SUPERVISOR"
+        },
+        {
+          "name": "SLIDER"
         }
       ]
     },
@@ -647,6 +650,9 @@
         },
         {
           "name": "INFRA_SOLR"
+        },
+        {
+          "name": "SLIDER"
         }
       ]
     },
@@ -722,6 +728,9 @@
         },
         {
           "name": "KAFKA_BROKER"
+        },
+        {
+          "name": "SLIDER"
         }
       ]
     },
@@ -791,6 +800,9 @@
         },
         {
           "name": "HIVE_METASTORE"
+        },
+        {
+          "name": "SLIDER"
         }
       ]
     }
