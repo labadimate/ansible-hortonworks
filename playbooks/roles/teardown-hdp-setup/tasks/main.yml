@@ -1,0 +1,65 @@
+---
+  - name: stop ambari services
+    ignore_errors: yes
+    shell: "systemctl stop {{ item }}"
+    with_items:
+      - ambari-agent
+      - ambari-server
+
+  - name: kill all java and python processes
+    ignore_errors: yes
+    shell: "ps -ef|grep {{ item }}|awk '{print $2}'|xargs kill -9"
+    with_items:
+      - java
+      - python
+
+  - name: stop all other dependent services running
+    ignore_errors: yes
+    shell: "systemctl stop {{ item }}"
+    with_items:
+      - mariadb
+      - mysql
+      - krb5kdc
+
+  - name: uninstall all services except ranger
+    shell: "yum -y remove storm_2_6_5_0_292-slider-client spark2_2_6_5_0_292-yarn-shuffle spark_2_6_5_0_292-yarn-shuffle slider_2_6_5_0_292 ranger_2_6_5_0_292-admin oozie_2_6_5_0_292-client ambari-infra-solr-client ambari-metrics-hadoop-sink ambari-metrics-monitor zookeeper_2_6_5_0_292 zookeeper_2_6_5_0_292-server storm_2_6_5_0_29 tez_2_6_5_0_292 tez_hive2_2_6_5_0_292 spark_llap_2_6_5_0_292"
+
+  - name: uninstall ranger plugins services
+    shell: "yum -y remove ranger_2_6_5_0_292-hive-plugin ranger_2_6_5_0_292-usersync ranger_2_6_5_0_292-hbase-plugin ranger_2_6_5_0_292-hdfs-plugin ranger_2_6_5_0_292-kafka-plugin ranger_2_6_5_0_292-storm-plugin ranger_2_6_5_0_292-yarn-plugin ranger_2_6_5_0_292-yarn-plugin"
+
+  - name: uninstall all ambari/management services
+    shell: "yum -y remove ambari-agent ambari-server mysql mysql-server mariadb MariaDB-client MariaDB-common MariaDB-compat MariaDB-server krb5-workstation krb5-server krb5kdc krb5-admin-server krb5-config krb5.conf"
+
+  - name: uninstall java and hdp-select
+    shell: "yum -y remove java hdp-select"
+
+  - name: remove hdp folder
+    shell: "rm -rf hdp"
+    args:
+      chdir: "/usr"
+
+  - name: remove all service folders inside /var/lib
+    shell: "rm -rf mapr* pi* infra* hca* bee* ranger* stor* phoe* falco* hdf* spa* hbas* falc* tez* sto* zook* hado* hiv* ooz* kaf* amb* yar* falc* hbas*  mysq* my* krb5* livy*"
+    args:
+      chdir: "/var/lib"
+
+  - name: remove all service log folders inside /var/log
+    shell: "rm -rf mapr* pi* infra* hca* bee* ranger* stor* phoe* falco* hdf* spa* hbas* falc* tez* sto* zook* hado* hiv* ooz* kaf* amb* yar* falc* hbas*  mysq* my* krb5* livy*"
+    args:
+      chdir: "/var/log"
+
+  - name: remove all conf folders inside /etc
+    shell: "rm -rf mapr* pi* infra* hca* bee* ranger* stor* phoe* falco* hdf* spa* hbas* falc* tez* sto* zook* hado* hiv* ooz* kaf* amb* yar* falc* hbas*  mysq* my* krb5* livy*"
+    args:
+      chdir: "/etc"
+
+  - name: remove all executables inside /usr/bin
+    shell: "rm -rf mapr* pi* infra* hca* bee* ranger* stor* phoe* falco* hdf* spa* hbas* falc* tez* sto* zook* hado* hiv* ooz* kaf* amb* yar* falc* hbas*  mysq* my* krb5* livy*"
+    args:
+      chdir: "/usr/bin"
+
+  - name: remove kerberos folder
+    shell: "rm -rf /var/kerberos/"
+
+  - name: remove keberos lib64
+    shell: "rm -rf /usr/lib64/krb5"

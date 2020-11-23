@@ -1,0 +1,21 @@
+---
+- import_playbook: "set_variables.yml"
+  tags: always
+
+- name: Apply teardown hdp setup roles to the hadoop-cluster group
+  hosts: hadoop-cluster
+  ignore_unreachable: yes
+  become: yes
+  roles:
+    - role: teardown-hdp-setup
+      tags:
+        - teardown
+
+- name: Test hosts of the hadoop-cluster group
+  hosts: hadoop-cluster
+  ignore_unreachable: yes
+  become: yes
+  roles:
+    - role: display_hostname
+      tags:
+        - connectiontest
