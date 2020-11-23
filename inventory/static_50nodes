@@ -1,0 +1,68 @@
+[allworkers]
+vc1519.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1520.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1521.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1522.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1523.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1524.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1525.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1526.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1527.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1528.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1529.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1530.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1531.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1532.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1533.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1534.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1535.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1536.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1537.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1538.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1539.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1540.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1541.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vc1542.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vd1301.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vd1302.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vd1303.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vd1304.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vd1305.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vd1306.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vd1307.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vd1308.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vd1309.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vd1310.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vd1311.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vd1312.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vd1313.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vd1314.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vd1315.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vd1316.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vd1317.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+vd1318.halxg.cloudera.com  ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+
+[master1]
+vc1511.halxg.cloudera.com ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+
+[master2]
+vc1512.halxg.cloudera.com ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+
+[master3]
+vc1513.halxg.cloudera.com ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+
+[master4]
+vc1514.halxg.cloudera.com ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+
+[master5]
+vc1515.halxg.cloudera.com ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+
+[worker1]
+vc1516.halxg.cloudera.com ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+
+[worker2]
+vc1517.halxg.cloudera.com ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+
+[worker3]
+vc1518.halxg.cloudera.com ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+
