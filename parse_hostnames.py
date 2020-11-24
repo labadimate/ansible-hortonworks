@@ -81,7 +81,6 @@ def write_ansible_invetory_file(hosts_list, key_location):
 
     key_location = f'"{key_location}"'
     config = configparser.ConfigParser()
-    config.add_section("allworkers")
     for host_index, host_name in enumerate(hosts_list):
         if  0 <= host_index <= 4:
             group = f'master{host_index+1}'
@@ -92,7 +91,9 @@ def write_ansible_invetory_file(hosts_list, key_location):
             config.add_section(group)
             config.set(group, f'{host_name} ansible_user=systest ansible_ssh_private_key_file', key_location)
         else:
-            config.set("allworkers", f'{host_name}  ansible_user=systest ansible_ssh_private_key_file', key_location)
+            group = f'allworkers{host_index-7}'
+            config.add_section(group)
+            config.set(group, f'{host_name}  ansible_user=systest ansible_ssh_private_key_file', key_location)
 
     with open('inventory/static_50nodes', 'w') as outfile:
         config.write(EqualsSpaceRemover(outfile))
