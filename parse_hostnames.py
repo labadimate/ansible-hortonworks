@@ -91,7 +91,7 @@ def write_ansible_invetory_file(hosts_list, key_location):
             config.add_section(group)
             config.set(group, f'h{group} ansible_host={host_name} ansible_user=systest ansible_ssh_private_key_file', key_location)
         else:
-            group = f'allworkers{host_index-7}'
+            group = f'nodes{host_index-7}'
             config.add_section(group)
             config.set(group, f'h{group} ansible_host={host_name} ansible_user=systest ansible_ssh_private_key_file', key_location)
 

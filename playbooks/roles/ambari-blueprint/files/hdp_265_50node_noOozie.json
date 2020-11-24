@@ -914,7 +914,7 @@
       ]
     },
     {
-      "name": "allworkers1",
+      "name": "nodes1",
       "configurations" : [],
       "components": [
         {
@@ -968,7 +968,7 @@
       ]
     },
     {
-      "name": "allworkers2",
+      "name": "nodes2",
       "configurations" : [],
       "components": [
         {
@@ -1019,7 +1019,7 @@
       ]
     },
     {
-      "name": "allworkers3",
+      "name": "nodes3",
       "configurations" : [],
       "components": [
         {
@@ -1070,7 +1070,7 @@
       ]
     },
     {
-      "name": "allworkers4",
+      "name": "nodes4",
       "configurations" : [],
       "components": [
         {
@@ -1121,265 +1121,7 @@
       ]
     },
     {
-      "name": "allworkers5",
-      "configurations" : [],
-      "components": [
-        {
-          "name": "DATANODE"
-        },
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "HBASE_REGIONSERVER"
-        },
-        {
-          "name": "SUPERVISOR"
-        },
-        {
-          "name": "HCAT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        }
-      ]
-    },
-    {
-      "name": "allworkers6",
-      "configurations" : [],
-      "components": [
-        {
-          "name": "DATANODE"
-        },
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "SUPERVISOR"
-        },
-        {
-          "name": "HCAT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        }
-      ]
-    },
-    {
-      "name": "allworkers7",
-      "configurations" : [],
-      "components": [
-        {
-          "name": "DATANODE"
-        },
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "SUPERVISOR"
-        },
-        {
-          "name": "HCAT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        }
-      ]
-    },
-    {
-      "name": "allworkers8",
-      "configurations" : [],
-      "components": [
-        {
-          "name": "DATANODE"
-        },
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "SUPERVISOR"
-        },
-        {
-          "name": "HCAT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        }
-      ]
-    },
-    {
-      "name": "allworkers9",
-      "configurations" : [],
-      "components": [
-        {
-          "name": "DATANODE"
-        },
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "SUPERVISOR"
-        },
-        {
-          "name": "HCAT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        }
-      ]
-    },
-    {
-      "name": "allworkers10",
+      "name": "nodes5",
       "configurations" : [],
       "components": [
         {
@@ -1433,7 +1175,7 @@
       ]
     },
     {
-      "name": "allworkers11",
+      "name": "nodes6",
       "configurations" : [],
       "components": [
         {
@@ -1484,7 +1226,7 @@
       ]
     },
     {
-      "name": "allworkers12",
+      "name": "nodes7",
       "configurations" : [],
       "components": [
         {
@@ -1535,7 +1277,7 @@
       ]
     },
     {
-      "name": "allworkers13",
+      "name": "nodes8",
       "configurations" : [],
       "components": [
         {
@@ -1586,7 +1328,7 @@
       ]
     },
     {
-      "name": "allworkers14",
+      "name": "nodes9",
       "configurations" : [],
       "components": [
         {
@@ -1637,265 +1379,7 @@
       ]
     },
     {
-      "name": "allworkers15",
-      "configurations" : [],
-      "components": [
-        {
-          "name": "DATANODE"
-        },
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "HBASE_REGIONSERVER"
-        },
-        {
-          "name": "SUPERVISOR"
-        },
-        {
-          "name": "HCAT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        }
-      ]
-    },
-    {
-      "name": "allworkers16",
-      "configurations" : [],
-      "components": [
-        {
-          "name": "DATANODE"
-        },
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "SUPERVISOR"
-        },
-        {
-          "name": "HCAT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        }
-      ]
-    },
-    {
-      "name": "allworkers17",
-      "configurations" : [],
-      "components": [
-        {
-          "name": "DATANODE"
-        },
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "SUPERVISOR"
-        },
-        {
-          "name": "HCAT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        }
-      ]
-    },
-    {
-      "name": "allworkers18",
-      "configurations" : [],
-      "components": [
-        {
-          "name": "DATANODE"
-        },
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "SUPERVISOR"
-        },
-        {
-          "name": "HCAT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        }
-      ]
-    },
-    {
-      "name": "allworkers19",
-      "configurations" : [],
-      "components": [
-        {
-          "name": "DATANODE"
-        },
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "SUPERVISOR"
-        },
-        {
-          "name": "HCAT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        }
-      ]
-    },
-    {
-      "name": "allworkers20",
+      "name": "nodes10",
       "configurations" : [],
       "components": [
         {
@@ -1949,7 +1433,7 @@
       ]
     },
     {
-      "name": "allworkers21",
+      "name": "nodes11",
       "configurations" : [],
       "components": [
         {
@@ -2000,7 +1484,7 @@
       ]
     },
     {
-      "name": "allworkers22",
+      "name": "nodes12",
       "configurations" : [],
       "components": [
         {
@@ -2051,7 +1535,7 @@
       ]
     },
     {
-      "name": "allworkers23",
+      "name": "nodes13",
       "configurations" : [],
       "components": [
         {
@@ -2102,7 +1586,7 @@
       ]
     },
     {
-      "name": "allworkers24",
+      "name": "nodes14",
       "configurations" : [],
       "components": [
         {
@@ -2153,265 +1637,7 @@
       ]
     },
     {
-      "name": "allworkers25",
-      "configurations" : [],
-      "components": [
-        {
-          "name": "DATANODE"
-        },
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "HBASE_REGIONSERVER"
-        },
-        {
-          "name": "SUPERVISOR"
-        },
-        {
-          "name": "HCAT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        }
-      ]
-    },
-    {
-      "name": "allworkers26",
-      "configurations" : [],
-      "components": [
-        {
-          "name": "DATANODE"
-        },
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "SUPERVISOR"
-        },
-        {
-          "name": "HCAT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        }
-      ]
-    },
-    {
-      "name": "allworkers27",
-      "configurations" : [],
-      "components": [
-        {
-          "name": "DATANODE"
-        },
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "SUPERVISOR"
-        },
-        {
-          "name": "HCAT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        }
-      ]
-    },
-    {
-      "name": "allworkers28",
-      "configurations" : [],
-      "components": [
-        {
-          "name": "DATANODE"
-        },
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "SUPERVISOR"
-        },
-        {
-          "name": "HCAT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        }
-      ]
-    },
-    {
-      "name": "allworkers29",
-      "configurations" : [],
-      "components": [
-        {
-          "name": "DATANODE"
-        },
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "SUPERVISOR"
-        },
-        {
-          "name": "HCAT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        }
-      ]
-    },
-    {
-      "name": "allworkers30",
+      "name": "nodes15",
       "configurations" : [],
       "components": [
         {
@@ -2465,7 +1691,7 @@
       ]
     },
     {
-      "name": "allworkers31",
+      "name": "nodes16",
       "configurations" : [],
       "components": [
         {
@@ -2516,7 +1742,7 @@
       ]
     },
     {
-      "name": "allworkers32",
+      "name": "nodes17",
       "configurations" : [],
       "components": [
         {
@@ -2567,7 +1793,7 @@
       ]
     },
     {
-      "name": "allworkers33",
+      "name": "nodes18",
       "configurations" : [],
       "components": [
         {
@@ -2618,7 +1844,7 @@
       ]
     },
     {
-      "name": "allworkers34",
+      "name": "nodes19",
       "configurations" : [],
       "components": [
         {
@@ -2669,265 +1895,7 @@
       ]
     },
     {
-      "name": "allworkers35",
-      "configurations" : [],
-      "components": [
-        {
-          "name": "DATANODE"
-        },
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "HBASE_REGIONSERVER"
-        },
-        {
-          "name": "SUPERVISOR"
-        },
-        {
-          "name": "HCAT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        }
-      ]
-    },
-    {
-      "name": "allworkers36",
-      "configurations" : [],
-      "components": [
-        {
-          "name": "DATANODE"
-        },
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "SUPERVISOR"
-        },
-        {
-          "name": "HCAT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        }
-      ]
-    },
-    {
-      "name": "allworkers37",
-      "configurations" : [],
-      "components": [
-        {
-          "name": "DATANODE"
-        },
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "SUPERVISOR"
-        },
-        {
-          "name": "HCAT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        }
-      ]
-    },
-    {
-      "name": "allworkers38",
-      "configurations" : [],
-      "components": [
-        {
-          "name": "DATANODE"
-        },
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "SUPERVISOR"
-        },
-        {
-          "name": "HCAT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        }
-      ]
-    },
-    {
-      "name": "allworkers39",
-      "configurations" : [],
-      "components": [
-        {
-          "name": "DATANODE"
-        },
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "SUPERVISOR"
-        },
-        {
-          "name": "HCAT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        }
-      ]
-    },
-    {
-      "name": "allworkers40",
+      "name": "nodes20",
       "configurations" : [],
       "components": [
         {
@@ -2981,7 +1949,7 @@
       ]
     },
     {
-      "name": "allworkers41",
+      "name": "nodes21",
       "configurations" : [],
       "components": [
         {
@@ -3032,7 +2000,1039 @@
       ]
     },
     {
-      "name": "allworkers42",
+      "name": "nodes22",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "nodes23",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "nodes24",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "nodes25",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "HBASE_REGIONSERVER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "nodes26",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "nodes27",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "nodes28",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "nodes29",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "nodes30",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "HBASE_REGIONSERVER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "nodes31",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "nodes32",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "nodes33",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "nodes34",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "nodes35",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "HBASE_REGIONSERVER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "nodes36",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "nodes37",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "nodes38",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "nodes39",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "nodes40",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "HBASE_REGIONSERVER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "nodes41",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "nodes42",
       "configurations" : [],
       "components": [
         {
