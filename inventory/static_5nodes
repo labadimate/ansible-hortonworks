@@ -7,16 +7,16 @@
 ######################################################
 
 [master1]
-10.17.193.13 ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+master01 ansible_host=10.17.193.13 ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
 
 [master2]
-10.17.193.14 ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+master02 ansible_host=10.17.193.14 ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
 
 [worker1]
-10.17.193.15 ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+worker01 ansible_host=10.17.193.15 ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
 
 [worker2]
-10.17.193.16 ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+worker02 ansible_host=10.17.193.16 ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
 
 [worker3]
-10.17.193.17 ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
+worker03 ansible_host=10.17.193.17 ansible_user=systest ansible_ssh_private_key_file="~/arun/systest.pem"
