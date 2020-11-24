@@ -6,8 +6,8 @@
         "properties": {
           "realm": "CLOUDERA.COM",
           "kdc_type": "mit-kdc",
-          "kdc_hosts" : "vb0207.halxg.cloudera.com",
-          "admin_server_host" : "vb0207.halxg.cloudera.com",
+          "kdc_hosts" : "vc1515.halxg.cloudera.com",
+          "admin_server_host" : "vc1515.halxg.cloudera.com",
           "container_dn" : "",
           "ldap_url" : ""
         }
@@ -552,19 +552,28 @@
       "configurations" : [],
       "components": [
         {
-          "name": "AMBARI_SERVER"
+          "name": "HBASE_MASTER"
         },
         {
-          "name": "RANGER_ADMIN"
+          "name": "PHOENIX_QUERY_SERVER"
         },
         {
-          "name": "RANGER_USERSYNC"
+          "name": "JOURNALNODE"
         },
         {
-          "name": "HIVE_METASTORE"
+          "name": "ZEPPELIN_MASTER"
         },
         {
-          "name": "HIVE_SERVER"
+          "name": "DRPC_SERVER"
+        },
+        {
+          "name": "METRICS_COLLECTOR"
+        },
+        {
+          "name": "METRICS_GRAFANA"
+        },
+        {
+          "name": "INFRA_SOLR"
         },
         {
           "name": "HCAT"
@@ -678,28 +687,19 @@
       "configurations" : [],
       "components": [
         {
-          "name": "HBASE_MASTER"
+          "name": "AMBARI_SERVER"
         },
         {
-          "name": "PHOENIX_QUERY_SERVER"
+          "name": "RANGER_ADMIN"
         },
         {
-          "name": "JOURNALNODE"
+          "name": "RANGER_USERSYNC"
         },
         {
-          "name": "ZEPPELIN_MASTER"
+          "name": "HIVE_METASTORE"
         },
         {
-          "name": "DRPC_SERVER"
-        },
-        {
-          "name": "METRICS_COLLECTOR"
-        },
-        {
-          "name": "METRICS_GRAFANA"
-        },
-        {
-          "name": "INFRA_SOLR"
+          "name": "HIVE_SERVER"
         },
         {
           "name": "HCAT"
