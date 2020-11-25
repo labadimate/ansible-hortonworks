@@ -2,6 +2,8 @@
   - name: stop ambari services
     ignore_errors: yes
     shell: "systemctl stop {{ item }}"
+    failed_when: false
+    no_log: True
     with_items:
       - ambari-agent
       - ambari-server
@@ -16,21 +18,31 @@
   - name: stop all other dependent services running
     ignore_errors: yes
     shell: "systemctl stop {{ item }}"
+    failed_when: false
+    no_log: True
     with_items:
       - mariadb
       - mysql
       - krb5kdc
 
   - name: uninstall all services except ranger
+    failed_when: false
+    no_log: True
     shell: "yum -y remove storm_2_6_5_0_292-slider-client spark2_2_6_5_0_292-yarn-shuffle spark_2_6_5_0_292-yarn-shuffle slider_2_6_5_0_292 ranger_2_6_5_0_292-admin oozie_2_6_5_0_292-client ambari-infra-solr-client ambari-metrics-hadoop-sink ambari-metrics-monitor zookeeper_2_6_5_0_292 zookeeper_2_6_5_0_292-server storm_2_6_5_0_29 tez_2_6_5_0_292 tez_hive2_2_6_5_0_292 spark_llap_2_6_5_0_292"
 
   - name: uninstall ranger plugins services
+    failed_when: false
+    no_log: True
     shell: "yum -y remove ranger_2_6_5_0_292-hive-plugin ranger_2_6_5_0_292-usersync ranger_2_6_5_0_292-hbase-plugin ranger_2_6_5_0_292-hdfs-plugin ranger_2_6_5_0_292-kafka-plugin ranger_2_6_5_0_292-storm-plugin ranger_2_6_5_0_292-yarn-plugin ranger_2_6_5_0_292-yarn-plugin"
 
   - name: uninstall all ambari/management services
+    failed_when: false
+    no_log: True
     shell: "yum -y remove ambari-agent ambari-server mysql mysql-server mariadb MariaDB-client MariaDB-common MariaDB-compat MariaDB-server krb5-workstation krb5-server krb5kdc krb5-admin-server krb5-config krb5.conf"
 
   - name: uninstall java and hdp-select
+    failed_when: false
+    no_log: True
     shell: "yum -y remove java hdp-select"
 
   - name: remove hdp folder
