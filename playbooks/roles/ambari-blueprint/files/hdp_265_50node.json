@@ -640,9 +640,6 @@
           "name": "SLIDER"
         },
         {
-          "name": "HDFS_CLIENT"
-        },
-        {
           "name": "MAPREDUCE2_CLIENT"
         },
         {
@@ -662,6 +659,9 @@
         },
         {
           "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -691,9 +691,6 @@
           "name": "SLIDER"
         },
         {
-          "name": "HDFS_CLIENT"
-        },
-        {
           "name": "MAPREDUCE2_CLIENT"
         },
         {
@@ -713,6 +710,9 @@
         },
         {
           "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -742,9 +742,6 @@
           "name": "SLIDER"
         },
         {
-          "name": "HDFS_CLIENT"
-        },
-        {
           "name": "MAPREDUCE2_CLIENT"
         },
         {
@@ -764,6 +761,9 @@
         },
         {
           "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -1060,9 +1060,6 @@
           "name": "SLIDER"
         },
         {
-          "name": "HDFS_CLIENT"
-        },
-        {
           "name": "MAPREDUCE2_CLIENT"
         },
         {
@@ -1103,9 +1100,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
         },
         {
           "name": "MAPREDUCE2_CLIENT"
@@ -1150,9 +1144,6 @@
           "name": "SLIDER"
         },
         {
-          "name": "HDFS_CLIENT"
-        },
-        {
           "name": "MAPREDUCE2_CLIENT"
         },
         {
@@ -1193,9 +1184,6 @@
         },
         {
           "name": "PIG"
-        },
-        {
-          "name": "HDFS_CLIENT"
         },
         {
           "name": "MAPREDUCE2_CLIENT"
