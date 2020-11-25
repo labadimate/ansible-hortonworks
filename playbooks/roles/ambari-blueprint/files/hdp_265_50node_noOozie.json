@@ -47,11 +47,11 @@
     {
       "hadoop-env": {
         "properties": {
-          "hadoop_heapsize": "4096",
-          "dtnode_heapsize": "8192m",
-          "namenode_heapsize": "16384m",
-          "namenode_opt_newsize": "2048m",
-          "namenode_opt_maxnewsize": "2048m"
+          "hadoop_heapsize": "49152",
+          "dtnode_heapsize": "16384m",
+          "namenode_heapsize": "49152m",
+          "namenode_opt_newsize": "4096m",
+          "namenode_opt_maxnewsize": "8192m"
         }
       }
     },
@@ -117,8 +117,8 @@
           "yarn.nodemanager.delete.debug-delay-sec": "3600",
           "yarn.nodemanager.address": "0.0.0.0:25454",
           "yarn.resourcemanager.webapp.address": "%HOSTGROUP::master1%:8088",
-          "yarn.nodemanager.resource.memory-mb": "116736",
-          "yarn.scheduler.minimum-allocation-mb": "1024",
+          "yarn.nodemanager.resource.memory-mb": "98304",
+          "yarn.scheduler.minimum-allocation-mb": "2048",
           "yarn.scheduler.maximum-allocation-mb": "6144",
           "yarn.resourcemanager.ha.enabled": "true",
           "yarn.resourcemanager.hostname": "%HOSTGROUP::master1%",
@@ -215,7 +215,7 @@
         "properties": {
           "hive_txn_acid": "on",
           "hive.client.heapsize": "4096",
-          "hive.metastore.heapsize": "8192",
+          "hive.metastore.heapsize": "16384",
           "hive.heapsize": "16384",
           "hive_database" : "Existing MySQL Database",
           "hive_database_name" : "hive",
@@ -298,7 +298,7 @@
     {
       "hive-interactive-env": {
         "properties": {
-          "llap_heap_size": "71704",
+          "llap_heap_size": "49152",
           "enable_hive_interactive": "true",
           "slider_am_container_mb": "1024",
           "llap_queue_capacity": "80",
