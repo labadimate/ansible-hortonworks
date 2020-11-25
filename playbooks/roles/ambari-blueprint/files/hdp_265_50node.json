@@ -640,25 +640,7 @@
           "name": "SLIDER"
         },
         {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
         },
         {
           "name": "ATLAS_CLIENT"
@@ -691,25 +673,7 @@
           "name": "SLIDER"
         },
         {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
         },
         {
           "name": "ATLAS_CLIENT"
@@ -742,25 +706,7 @@
           "name": "SLIDER"
         },
         {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
         },
         {
           "name": "ATLAS_CLIENT"
@@ -796,13 +742,7 @@
           "name": "OOZIE_CLIENT"
         },
         {
-          "name": "PIG"
-        },
-        {
           "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
         },
         {
           "name": "YARN_CLIENT"
@@ -850,13 +790,7 @@
           "name": "OOZIE_CLIENT"
         },
         {
-          "name": "PIG"
-        },
-        {
           "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
         },
         {
           "name": "YARN_CLIENT"
@@ -901,13 +835,7 @@
           "name": "OOZIE_CLIENT"
         },
         {
-          "name": "PIG"
-        },
-        {
           "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
         },
         {
           "name": "YARN_CLIENT"
@@ -952,13 +880,7 @@
           "name": "OOZIE_CLIENT"
         },
         {
-          "name": "PIG"
-        },
-        {
           "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
         },
         {
           "name": "YARN_CLIENT"
@@ -997,9 +919,6 @@
           "name": "OOZIE_CLIENT"
         },
         {
-          "name": "PIG"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -1010,9 +929,6 @@
         },
         {
           "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
         },
         {
           "name": "YARN_CLIENT"
@@ -1061,18 +977,6 @@
         },
         {
           "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -1103,18 +1007,6 @@
         },
         {
           "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -1145,18 +1037,6 @@
         },
         {
           "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -1187,18 +1067,6 @@
         },
         {
           "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -1232,6 +1100,9 @@
         },
         {
           "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
         }
       ]
     },
