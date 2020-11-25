@@ -146,7 +146,7 @@
     },
     {
       "oozie-env": {
-        "oozie_hostname": "%HOSTGROUP::master1%",
+        "oozie_hostname": "%HOSTGROUP::worker3%",
         "oozie_database": "Existing MySQL Database",
         "oozie_ambari_database" : "MySQL",
         "oozie_existing_mysql_database" : "MySQL",
@@ -159,7 +159,7 @@
         "oozie.service.JPAService.jdbc.username": "oozie",
         "oozie.service.JPAService.jdbc.password": "oozie",
         "oozie.service.JPAService.jdbc.driver": "com.mysql.jdbc.Driver",
-        "oozie.service.JPAService.jdbc.url": "jdbc:mysql://%HOSTGROUP::master2%/oozie",
+        "oozie.service.JPAService.jdbc.url": "jdbc:mysql://localhost:3306/oozie",
         "oozie.service.HadoopAccessorService.supported.filesystems": "*",
         "oozie.authentication.kerberos.principal": "*",
         "oozie.service.WorkflowAppService.WorkflowDefinitionMaxLength": "1000000"
@@ -515,6 +515,9 @@
         },
         {
           "name": "SLIDER"
+        },
+        {
+          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -595,10 +598,13 @@
           "name": "PHOENIX_QUERY_SERVER"
         },
         {
-          "name": "OOZIE_SERVER"
+          "name": "SUPERVISOR"
         },
         {
-          "name": "SUPERVISOR"
+          "name": "PIG"
+        },
+        {
+          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -680,6 +686,12 @@
         },
         {
           "name": "SLIDER"
+        },
+        {
+          "name": "PIG"
+        },
+        {
+          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -761,6 +773,12 @@
         },
         {
           "name": "SLIDER"
+        },
+        {
+          "name": "PIG"
+        },
+        {
+          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -826,6 +844,9 @@
           "name": "AMBARI_SERVER"
         },
         {
+          "name": "OOZIE_SERVER"
+        },
+        {
           "name": "RANGER_ADMIN"
         },
         {
@@ -839,6 +860,15 @@
         },
         {
           "name": "SLIDER"
+        },
+        {
+          "name": "PIG"
+        },
+        {
+          "name": "ATLAS_CLIENT"
+        },
+        {
+          "name": "ATLAS_SERVER"
         }
       ]
     }
