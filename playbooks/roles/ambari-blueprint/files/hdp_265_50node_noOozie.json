@@ -72,7 +72,7 @@
           "dfs.namenode.name.dir": "/data/1/hadoop/hdfs/namenode,/data/2/hadoop/hdfs/namenode,/data/3/hadoop/hdfs/namenode",
           "dfs.namenode.avoid.read.stale.datanode": "true",
           "dfs.namenode.avoid.write.stale.datanode": "true",
-          "dfs.namenode.shared.edits.dir": "qjournal://%HOSTGROUP::master1%:8485,%HOSTGROUP::master2%:8485,%HOSTGROUP::master5%:8485/chelsea",
+          "dfs.namenode.shared.edits.dir": "qjournal://%HOSTGROUP::master1%:8485,%HOSTGROUP::master2%:8485,%HOSTGROUP::master3%:8485/chelsea",
           "dfs.namenode.checkpoint.edits.dir": "${dfs.namenode.checkpoint.dir}",
           "dfs.namenode.name.dir.restore": "true",
           "dfs.namenode.https-address.chelsea.nn1": "%HOSTGROUP::master1%:50470",
@@ -379,7 +379,7 @@
           "db_root_user": "rangerdba",
           "db_host": "localhost",
           "db_root_password": "password",
-          "policymgr_external_url": "http://%HOSTGROUP::master2%:6080"
+          "policymgr_external_url": "http://%HOSTGROUP::master5%:6080"
         }
       }
     },
@@ -621,9 +621,6 @@
       "configurations" : [],
       "components": [
         {
-          "name": "HIVE_SERVER_INTERACTIVE"
-        },
-        {
           "name": "WEBHCAT_SERVER"
         },
         {
@@ -700,6 +697,9 @@
         },
         {
           "name": "HIVE_SERVER"
+        },
+        {
+          "name": "HIVE_SERVER_INTERACTIVE"
         },
         {
           "name": "HCAT"
