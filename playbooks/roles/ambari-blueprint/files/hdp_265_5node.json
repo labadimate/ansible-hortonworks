@@ -118,9 +118,9 @@
           "yarn.nodemanager.delete.debug-delay-sec": "3600",
           "yarn.nodemanager.address": "0.0.0.0:25454",
           "yarn.resourcemanager.webapp.address": "%HOSTGROUP::master1%:8088",
-          "yarn.nodemanager.resource.memory-mb": "116736",
-          "yarn.scheduler.minimum-allocation-mb": "1024",
-          "yarn.scheduler.maximum-allocation-mb": "6144",
+          "yarn.nodemanager.resource.memory-mb": "98304",
+          "yarn.scheduler.minimum-allocation-mb": "3072",
+          "yarn.scheduler.maximum-allocation-mb": "8192",
           "yarn.resourcemanager.ha.enabled": "true",
           "yarn.resourcemanager.hostname": "%HOSTGROUP::master1%",
           "yarn.resourcemanager.cluster-id": "yarn-cluster",
@@ -217,7 +217,7 @@
       "hive-site": {
         "properties": {
           "hive.support.concurrency": "true",
-          "hive.tez.container.size": "5120",
+          "hive.tez.container.size": "8192",
           "hive.compactor.initiator.on": "true",
           "hive.auto.convert.join.noconditionaltask.size": "1431655765",
           "hive.compactor.worker.threads": "5",
@@ -252,23 +252,23 @@
     {
       "mapred-site": {
         "properties": {
-          "mapreduce.task.io.sort.mb": "1024",
-          "mapreduce.map.memory.mb": "4096",
+          "mapreduce.task.io.sort.mb": "2047",
+          "mapreduce.map.memory.mb": "8192",
           "mapreduce.am.max-attempts": "2",
-          "yarn.app.mapreduce.am.command-opts": "-Xmx1638m -Dhdp.version=${hdp.version}",
-          "mapreduce.reduce.memory.mb": "4096",
-          "mapreduce.map.java.opts": "-Xmx3686m",
+          "yarn.app.mapreduce.am.command-opts": "-Xmx6553m -Dhdp.version=${hdp.version}",
+          "mapreduce.reduce.memory.mb": "8192",
+          "mapreduce.map.java.opts": "-Xmx6553m",
           "yarn.app.mapreduce.am.resource.mb": "2560",
-          "mapreduce.reduce.java.opts": "-Xmx3686m"
+          "mapreduce.reduce.java.opts": "-Xmx6553m"
         }
       }
     },
     {
       "tez-site": {
         "properties": {
-          "tez.task.resource.memory.mb": "4096",
-          "tez.runtime.io.sort.mb": "1024",
-          "tez.am.resource.memory.mb": "4096",
+          "tez.task.resource.memory.mb": "8192",
+          "tez.runtime.io.sort.mb": "2162",
+          "tez.am.resource.memory.mb": "8192",
           "tez.am.max.app.attempts": "2"
         }
       }
@@ -320,7 +320,7 @@
     {
       "hive-interactive-env": {
         "properties": {
-          "llap_heap_size": "71704",
+          "llap_heap_size": "4096",
           "enable_hive_interactive": "true",
           "slider_am_container_mb": "1024",
           "llap_queue_capacity": "80",
@@ -332,9 +332,9 @@
       "hive-interactive-site": {
         "properties": {
           "hive.llap.client.consistent.splits": "true",
-          "hive.llap.daemon.yarn.container.mb": "131072",
+          "hive.llap.daemon.yarn.container.mb": "8192",
           "hive.llap.io.use.lrfu": "true",
-          "hive.llap.io.memory.size": "48128",
+          "hive.llap.io.memory.size": "4096",
           "hive.vectorized.execution.mapjoin.native.enabled": "true",
           "hive.server2.tez.default.queues": "default",
           "hive.metastore.event.listeners": "",
