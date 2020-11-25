@@ -1339,25 +1339,7 @@
           "name": "PIG"
         },
         {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
           "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -1379,21 +1361,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -1415,21 +1382,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -1451,21 +1403,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -1487,21 +1424,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -1528,25 +1450,7 @@
           "name": "SLIDER"
         },
         {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
           "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -1568,21 +1472,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -1604,21 +1493,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -1640,21 +1514,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -1676,21 +1535,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -1717,25 +1561,7 @@
           "name": "SLIDER"
         },
         {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
           "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -1757,21 +1583,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -1793,21 +1604,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -1829,21 +1625,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -1865,21 +1646,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -1906,25 +1672,7 @@
           "name": "SLIDER"
         },
         {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
           "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -1946,21 +1694,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -1982,27 +1715,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -2024,21 +1736,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -2060,21 +1757,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -2101,25 +1783,7 @@
           "name": "SLIDER"
         },
         {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
           "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -2141,21 +1805,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -2177,21 +1826,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -2213,21 +1847,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -2249,21 +1868,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         },
         {
           "name": "SPARK2_CLIENT"
@@ -2293,25 +1897,7 @@
           "name": "SLIDER"
         },
         {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
           "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         },
         {
           "name": "SPARK2_CLIENT"
@@ -2338,27 +1924,6 @@
           "name": "SLIDER"
         },
         {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
           "name": "SPARK2_CLIENT"
         }
       ]
@@ -2381,27 +1946,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         },
         {
           "name": "SPARK2_CLIENT"
@@ -2428,27 +1972,6 @@
           "name": "SLIDER"
         },
         {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
           "name": "SPARK2_CLIENT"
         }
       ]
@@ -2471,27 +1994,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         },
         {
           "name": "SPARK2_CLIENT"
@@ -2521,25 +2023,7 @@
           "name": "SLIDER"
         },
         {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "HIVE_CLIENT"
-        },
-        {
           "name": "HBASE_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         }
       ]
     },
@@ -2561,21 +2045,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         },
         {
           "name": "SPARK2_CLIENT"
@@ -2600,21 +2069,6 @@
         },
         {
           "name": "SLIDER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "TEZ_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
         },
         {
           "name": "SPARK2_CLIENT"
