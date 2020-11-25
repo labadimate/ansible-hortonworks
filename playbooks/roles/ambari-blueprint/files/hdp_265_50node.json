@@ -457,9 +457,6 @@
           "name": "RESOURCEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -481,12 +478,6 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
@@ -494,12 +485,6 @@
         },
         {
           "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -538,9 +523,6 @@
           "name": "METRICS_MONITOR"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "SLIDER"
         },
         {
@@ -553,12 +535,6 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
@@ -566,12 +542,6 @@
         },
         {
           "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -607,9 +577,6 @@
           "name": "HCAT"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "METRICS_MONITOR"
         },
         {
@@ -625,12 +592,6 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
@@ -638,12 +599,6 @@
         },
         {
           "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -673,9 +628,6 @@
           "name": "HCAT"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "METRICS_MONITOR"
         },
         {
@@ -691,12 +643,6 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
@@ -704,12 +650,6 @@
         },
         {
           "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -742,9 +682,6 @@
           "name": "HCAT"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "METRICS_MONITOR"
         },
         {
@@ -773,12 +710,6 @@
         },
         {
           "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -802,9 +733,6 @@
           "name": "HCAT"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "SLIDER"
         },
         {
@@ -830,12 +758,6 @@
         },
         {
           "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -856,9 +778,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -890,12 +809,6 @@
         },
         {
           "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -916,9 +829,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -950,12 +860,6 @@
         },
         {
           "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -1013,12 +917,6 @@
         },
         {
           "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -1063,9 +961,6 @@
           "name": "HIVE_CLIENT"
         },
         {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
@@ -1073,12 +968,6 @@
         },
         {
           "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -1123,9 +1012,6 @@
           "name": "HIVE_CLIENT"
         },
         {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
@@ -1133,12 +1019,6 @@
         },
         {
           "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -1183,9 +1063,6 @@
           "name": "HIVE_CLIENT"
         },
         {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
@@ -1193,12 +1070,6 @@
         },
         {
           "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -1256,12 +1127,6 @@
         },
         {
           "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -1276,9 +1141,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "OOZIE_CLIENT"
         },
         {
@@ -1306,22 +1168,10 @@
           "name": "HIVE_CLIENT"
         },
         {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -1336,9 +1186,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "OOZIE_CLIENT"
         },
         {
@@ -1366,22 +1213,10 @@
           "name": "HIVE_CLIENT"
         },
         {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -1396,9 +1231,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -1426,22 +1258,10 @@
           "name": "HIVE_CLIENT"
         },
         {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -1456,9 +1276,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -1486,22 +1303,10 @@
           "name": "HIVE_CLIENT"
         },
         {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -1519,9 +1324,6 @@
           "name": "HBASE_REGIONSERVER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -1556,15 +1358,6 @@
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -1579,9 +1372,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -1600,25 +1390,10 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -1633,9 +1408,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -1654,25 +1426,10 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -1687,9 +1444,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -1708,25 +1462,10 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -1741,9 +1480,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -1762,25 +1498,10 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -1798,9 +1519,6 @@
           "name": "HBASE_REGIONSERVER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -1829,15 +1547,6 @@
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -1852,9 +1561,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -1873,25 +1579,10 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -1906,9 +1597,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -1927,25 +1615,10 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -1960,9 +1633,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -1981,25 +1651,10 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -2014,9 +1669,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -2035,25 +1687,10 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -2071,9 +1708,6 @@
           "name": "HBASE_REGIONSERVER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -2102,15 +1736,6 @@
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -2125,9 +1750,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -2146,25 +1768,10 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -2179,9 +1786,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -2200,25 +1804,10 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -2233,9 +1822,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -2254,25 +1840,10 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -2287,9 +1858,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -2308,25 +1876,10 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -2344,9 +1897,6 @@
           "name": "HBASE_REGIONSERVER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -2375,15 +1925,6 @@
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -2398,9 +1939,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -2419,25 +1957,10 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -2452,9 +1975,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -2483,15 +2003,6 @@
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -2506,9 +2017,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -2527,25 +2035,10 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -2560,9 +2053,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -2581,25 +2071,10 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -2617,9 +2092,6 @@
           "name": "HBASE_REGIONSERVER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -2648,15 +2120,6 @@
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -2671,9 +2134,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -2692,25 +2152,10 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -2725,9 +2170,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -2746,25 +2188,10 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -2779,9 +2206,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -2800,25 +2224,10 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -2833,9 +2242,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -2854,25 +2260,13 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
         },
         {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
           "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -2890,9 +2284,6 @@
           "name": "HBASE_REGIONSERVER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -2923,13 +2314,7 @@
           "name": "ZOOKEEPER_CLIENT"
         },
         {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
           "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -2944,9 +2329,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -2977,13 +2359,7 @@
           "name": "ZOOKEEPER_CLIENT"
         },
         {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
           "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -2998,9 +2374,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -3031,13 +2404,7 @@
           "name": "ZOOKEEPER_CLIENT"
         },
         {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
           "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -3052,9 +2419,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -3085,13 +2449,7 @@
           "name": "ZOOKEEPER_CLIENT"
         },
         {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
           "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -3106,9 +2464,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -3139,13 +2494,7 @@
           "name": "ZOOKEEPER_CLIENT"
         },
         {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
           "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -3163,9 +2512,6 @@
           "name": "HBASE_REGIONSERVER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -3194,15 +2540,6 @@
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
-          "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -3217,9 +2554,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -3238,25 +2572,13 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
         },
         {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
           "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     },
@@ -3271,9 +2593,6 @@
           "name": "NODEMANAGER"
         },
         {
-          "name": "SUPERVISOR"
-        },
-        {
           "name": "HCAT"
         },
         {
@@ -3292,25 +2611,13 @@
           "name": "YARN_CLIENT"
         },
         {
-          "name": "HIVE_CLIENT"
-        },
-        {
-          "name": "HBASE_CLIENT"
-        },
-        {
           "name": "TEZ_CLIENT"
         },
         {
           "name": "ZOOKEEPER_CLIENT"
         },
         {
-          "name": "INFRA_SOLR_CLIENT"
-        },
-        {
           "name": "SPARK2_CLIENT"
-        },
-        {
-          "name": "ATLAS_CLIENT"
         }
       ]
     }
