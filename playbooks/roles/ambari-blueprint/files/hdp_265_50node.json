@@ -614,6 +614,12 @@
         },
         {
           "name": "SLIDER"
+        },
+        {
+          "name": "OOZIE_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
         }
       ]
     },

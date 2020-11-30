@@ -869,6 +869,12 @@
         },
         {
           "name": "ATLAS_SERVER"
+        },
+        {
+          "name": "OOZIE_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
         }
       ]
     }
