@@ -652,6 +652,9 @@
           "name": "ZOOKEEPER_CLIENT"
         },
         {
+          "name": "HIVE_CLIENT"
+        },
+        {
           "name": "ATLAS_CLIENT"
         }
       ]
