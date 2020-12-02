@@ -140,7 +140,9 @@
           "yarn.resourcemanager.store.class": "org.apache.hadoop.yarn.server.resourcemanager.recovery.ZKRMStateStore",
           "yarn.resourcemanager.scheduler.address": "%HOSTGROUP::master1%:8030",
           "yarn.timeline-service.leveldb-state-store.path": "/data/1/hadoop/yarn/timeline",
-          "yarn.timeline-service.leveldb-timeline-store.path": "/data/1/hadoop/yarn/timeline"
+          "yarn.timeline-service.leveldb-timeline-store.path": "/data/1/hadoop/yarn/timeline",
+          "nodemanager_heapsize": "4096",
+          "resourcemanager_heapsize": "4096"
         }
       }
     },
