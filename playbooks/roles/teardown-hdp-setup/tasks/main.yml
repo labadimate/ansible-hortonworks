@@ -73,6 +73,9 @@
   - name: remove kerberos folder
     shell: "rm -rf /var/kerberos/"
 
+  - name: remove kerberos folder
+    shell: "rm -rf /etc/security/keytabs/"
+
   - name: remove keberos lib64
     shell: "rm -rf /usr/lib64/krb5"
 
