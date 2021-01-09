@@ -75,3 +75,12 @@
 
   - name: remove keberos lib64
     shell: "rm -rf /usr/lib64/krb5"
+
+  - name: clear data folder
+    shell: "rm -rf /data/{{ item }}/hadoop"
+    failed_when: false
+    ignore_errors: yes
+    with_items:
+      - 1
+      - 2
+      - 3
