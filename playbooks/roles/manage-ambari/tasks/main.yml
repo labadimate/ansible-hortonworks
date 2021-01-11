@@ -27,8 +27,8 @@
   - name: add ambari repo
     ignore_errors: yes
     register: add_repo_remove
-    copy:
-      src: "/Users/avelusamy/Downloads/ambaridc.repo"
+    template:
+      src: "ambari.repo.j2"
       dest: "/etc/yum.repos.d/ambari.repo"
     tags:
       - update_ambari_repo
