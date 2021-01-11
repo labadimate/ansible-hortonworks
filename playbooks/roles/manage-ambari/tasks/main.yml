@@ -1,4 +1,5 @@
 ---
+
   - name: stop ambari agent services in all nodes
     ignore_errors: yes
     shell: "systemctl stop ambari-agent"
@@ -44,6 +45,12 @@
     shell: "yum -y upgrade ambari-agent"
     tags:
       - upgrade_ambari_agent
+
+  - name: start ambari agent services in all nodes
+    ignore_errors: yes
+    shell: "ambari-agent start"
+    tags:
+      - start_ambari_agent
 
   - name: display test message
     debug: msg="Test Message!!!"

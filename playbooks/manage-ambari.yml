@@ -2,15 +2,6 @@
 - import_playbook: "set_inventory.yml"
   tags: always
 
-- name: Test hosts of the hadoop-cluster group
-  hosts: hadoop-cluster
-  ignore_unreachable: yes
-  become: yes
-  roles:
-    - role: display_hostname
-      tags:
-        - connectiontest
-
 - name: Upgrade-ambari role
   hosts: hadoop-cluster
   ignore_unreachable: yes
