@@ -52,6 +52,12 @@
     tags:
       - start_ambari_agent
 
+  - name: upgrade AMS
+    ignore_errors: yes
+    shell: "yum -y upgrade ambari-metrics-monitor ambari-metrics-hadoop-sink"
+    tags:
+      - upgrade_ams
+
   - name: display test message
     debug: msg="Test Message!!!"
     tags:
