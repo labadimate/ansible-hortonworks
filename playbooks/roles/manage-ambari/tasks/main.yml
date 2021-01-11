@@ -1,0 +1,23 @@
+---
+  - name: stop ambari agent services in all nodes
+    ignore_errors: yes
+    shell: "systemctl stop ambari-agent"
+    tags:
+      - stop_ambari_agent
+
+  - name: display status of ambari agent services in all nodes
+    ignore_errors: yes
+    register: status
+    shell: "systemctl status ambari-agent"
+    tags:
+      - status_ambari_agent
+
+  - name: display ambari agent status
+    debug: msg="{{ status }}"
+    tags:
+      - status_ambari_agent
+
+  - name: display test message
+    debug: msg="Test Message!!!"
+    tags:
+      - test_tag

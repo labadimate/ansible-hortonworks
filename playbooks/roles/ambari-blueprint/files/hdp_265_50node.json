@@ -625,6 +625,9 @@
         },
         {
           "name": "ATLAS_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
         }
       ]
     },

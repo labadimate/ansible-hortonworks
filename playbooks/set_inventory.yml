@@ -1,0 +1,23 @@
+---
+
+- name: Create the required Ansible groups
+  hosts: localhost
+  connection: local
+  gather_facts: False
+  tasks:
+    - name: Add nodes to the hadoop-cluster group and groups representing the host_groups
+      include_tasks: "clouds/add_nodes_{{ cloud_name }}.yml"
+      with_items: "{{ nodes|default(omit) }}"
+
+    - name: Initialize the ambari_groups list
+      set_fact:
+        ambari_groups: []
+
+    - block:
+        - name: Populate the ambari_groups list (dynamic blueprint)
+          set_fact:
+            ambari_groups: "{{ ambari_groups }} + [ '{{ item.host_group }}' ]"
+          when: groups[item.host_group] is defined and groups[item.host_group]|length > 0 and 'AMBARI_SERVER' in item.services
+          with_items: "{{ blueprint_dynamic }}"
+          no_log: True
+      when: blueprint_file == 'blueprint_dynamic.j2'
