@@ -17,6 +17,20 @@
     tags:
       - status_ambari_agent
 
+  - name: remove ambari repo
+    ignore_errors: yes
+    register: ambari_repo_remove
+    shell: "rm -rf /etc/yum.repos.d/ambari.repo"
+    tags:
+      - update_ambari_repo
+
+  - name: add ambari repo
+    ignore_errors: yes
+    register: add_repo_remove
+    shell: "wget -nv http://s3.amazonaws.com/dev.hortonworks.com/ambari/centos7/7.x/BUILDS/7.1.4.0-25/ambari_public.repo -O /etc/yum.repos.d/ambari.repo"
+    tags:
+      - update_ambari_repo
+
   - name: display test message
     debug: msg="Test Message!!!"
     tags:
