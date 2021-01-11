@@ -27,7 +27,9 @@
   - name: add ambari repo
     ignore_errors: yes
     register: add_repo_remove
-    shell: "wget -nv http://s3.amazonaws.com/dev.hortonworks.com/ambari/centos7/7.x/BUILDS/7.1.4.0-25/ambari_public.repo -O /etc/yum.repos.d/ambari.repo"
+    copy:
+      src: "/Users/avelusamy/Downloads/ambaridc.repo"
+      dest: "/etc/yum.repos.d/ambari.repo"
     tags:
       - update_ambari_repo
 
