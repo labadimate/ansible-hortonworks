@@ -33,6 +33,18 @@
     tags:
       - update_ambari_repo
 
+  - name: clean ambari repo
+    ignore_errors: yes
+    shell: "yum clean all"
+    tags:
+      - upgrade_ambari_agent
+
+  - name: upgrade ambari agent
+    ignore_errors: yes
+    shell: "yum -y upgrade ambari-agent"
+    tags:
+      - upgrade_ambari_agent
+
   - name: display test message
     debug: msg="Test Message!!!"
     tags:
