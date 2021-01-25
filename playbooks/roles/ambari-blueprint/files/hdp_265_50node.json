@@ -564,9 +564,6 @@
           "name": "INFRA_SOLR"
         },
         {
-          "name": "SPARK2_JOBHISTORYSERVER"
-        },
-        {
           "name": "SPARK2_THRIFTSERVER"
         },
         {
@@ -615,6 +612,9 @@
           "name": "METRICS_MONITOR"
         },
         {
+          "name": "SPARK2_JOBHISTORYSERVER"
+        },
+        {
           "name": "SLIDER"
         },
         {
@@ -661,6 +661,9 @@
         },
         {
           "name": "ATLAS_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
         }
       ]
     },
