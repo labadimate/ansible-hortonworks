@@ -1,0 +1,11 @@
+---
+
+  - import_playbook: "set_inventory.yml"
+    tags: always
+
+  - name: yum update
+    hosts: hadoop-cluster
+    ignore_unreachable: yes
+    become: yes
+    roles:
+      - role: yum-update
