@@ -20,21 +20,19 @@
 
   - name: remove ambari repo
     ignore_errors: yes
-    register: ambari_repo_remove
     shell: "rm -rf /etc/yum.repos.d/ambari.repo"
     tags:
       - update_ambari_repo
 
   - name: add ambari repo
     ignore_errors: yes
-    register: add_repo_remove
     template:
       src: "ambari.repo.j2"
       dest: "/etc/yum.repos.d/ambari.repo"
     tags:
       - update_ambari_repo
 
-  - name: clean ambari repo
+  - name: yum clean all
     ignore_errors: yes
     shell: "yum clean all"
     tags:
@@ -52,9 +50,25 @@
     tags:
       - start_ambari_agent
 
-  - name: upgrade AMS
+  - name: yum complete transaction
+    ignore_errors: yes
+    shell: "yum-complete-transaction --cleanup-only"
+
+  - name: yum clean all
+    ignore_errors: yes
+    shell: "yum clean all"
+    tags:
+      - upgrade_ams
+
+  - name: upgrade AMS monitor and hadoop sink
     ignore_errors: yes
     shell: "yum -y upgrade ambari-metrics-monitor ambari-metrics-hadoop-sink"
+    tags:
+      - upgrade_ams
+
+  - name: upgrade solr client
+    ignore_errors: yes
+    shell: "yum -y upgrade ambari-infra-solr-client"
     tags:
       - upgrade_ams
 
