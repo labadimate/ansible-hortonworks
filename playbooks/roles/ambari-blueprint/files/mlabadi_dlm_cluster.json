@@ -1,0 +1,886 @@
+{
+  "configurations": [
+    {
+      "kerberos-env": {
+        "properties_attributes": {},
+        "properties": {
+          "realm": "CLOUDERA.COM",
+          "kdc_type": "mit-kdc",
+          "kdc_hosts" : "vd1324.halxg.cloudera.com",
+          "admin_server_host" : "vd1324.halxg.cloudera.com",
+          "container_dn" : "",
+          "ldap_url" : ""
+        }
+      }
+    },
+    {
+      "krb5-conf": {
+        "properties_attributes": {},
+        "properties": {
+          "domains": "CLOUDERA.COM",
+          "manage_krb5_conf": "true"
+        }
+      }
+    },
+    {
+      "core-site": {
+        "properties": {
+          "fs.defaultFS": "hdfs://chelsea",
+          "proxyuser_group": "users",
+          "ha.failover-controller.active-standby-elector.zk.op.retries": "120",
+          "hadoop.proxyuser.hdfs.hosts": "*",
+          "hadoop.proxyuser.root.groups": "*",
+          "dfs.namenode.safemode.extension": "5000",
+          "hadoop.proxyuser.oozie.hosts": "*",
+          "hadoop.proxyuser.hdfs.groups": "*",
+          "io.compression.codecs": "org.apache.hadoop.io.compress.GzipCodec,org.apache.hadoop.io.compress.DefaultCodec,org.apache.hadoop.io.compress.SnappyCodec",
+          "ha.zookeeper.quorum": "%HOSTGROUP::worker1%:2181,%HOSTGROUP::worker2%:2181,%HOSTGROUP::worker3%:2181",
+          "hadoop.proxyuser.root.hosts": "*",
+          "hadoop.proxyuser.hive.hosts": "*",
+          "hadoop.proxyuser.storm-marilyn.hosts": "*",
+          "hadoop.proxyuser.storm-marilyn.groups": "*",
+          "hadoop.proxyuser.streamline-marilyn.groups": "*",
+          "hadoop.proxyuser.streamline-marilyn.hosts": "*",
+          "fs.s3a.buffer.dir": "/data/1/s3abufferdir"
+        }
+      }
+    },
+    {
+      "hadoop-env": {
+        "properties": {
+          "hadoop_heapsize": "4096",
+          "dtnode_heapsize": "8192m",
+          "namenode_heapsize": "16384m",
+          "namenode_opt_newsize": "2048m",
+          "namenode_opt_maxnewsize": "2048m"
+        }
+      }
+    },
+    {
+      "cluster-env": {
+        "properties": {
+          "command_retry_max_time_in_sec": "1800"
+        }
+      }
+    },
+    {
+      "hdfs-site": {
+        "properties": {
+          "dfs.namenode.rpc-address.chelsea.nn1": "%HOSTGROUP::master1%:8020",
+          "dfs.namenode.rpc-address.chelsea.nn2": "%HOSTGROUP::master2%:8020",
+          "dfs.http.policy": "HTTP_ONLY",
+          "dfs.ha.fencing.methods": "shell(/bin/true)",
+          "dfs.replication": "3",
+          "dfs.nameservices": "chelsea",
+          "dfs.namenode.checkpoint.dir": "/data/1/hadoop/hdfs/namesecondary",
+          "dfs.namenode.handler.count": "40",
+          "dfs.https.port": "20470",
+          "dfs.replication.max": "50",
+          "dfs.namenode.name.dir": "/data/1/hadoop/hdfs/namenode,/data/2/hadoop/hdfs/namenode,/data/3/hadoop/hdfs/namenode",
+          "dfs.namenode.avoid.read.stale.datanode": "true",
+          "dfs.namenode.avoid.write.stale.datanode": "true",
+          "dfs.datanode.https.address": "0.0.0.0:50475",
+          "dfs.journalnode.http-address": "0.0.0.0:8480",
+          "dfs.datanode.data.dir": "/data/1/hadoop/hdfs/data,/data/2/hadoop/hdfs/data,/data/3/hadoop/hdfs/data",
+          "dfs.namenode.shared.edits.dir": "qjournal://%HOSTGROUP::master1%:8485,%HOSTGROUP::master2%:8485,%HOSTGROUP::worker1%:8485/chelsea",
+          "dfs.namenode.checkpoint.edits.dir": "${dfs.namenode.checkpoint.dir}",
+          "dfs.namenode.http-address.chelsea.nn1": "%HOSTGROUP::master1%:50070",
+          "dfs.client.failover.proxy.provider.chelsea": "org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider",
+          "dfs.hosts.exclude": "/etc/hadoop/conf/dfs.exclude",
+          "dfs.namenode.http-address.chelsea.nn2": "%HOSTGROUP::master2%:50070",
+          "dfs.namenode.name.dir.restore": "true",
+          "dfs.namenode.https-address.chelsea.nn2": "%HOSTGROUP::master2%:50470",
+          "dfs.namenode.https-address.chelsea.nn1": "%HOSTGROUP::master1%:50470",
+          "dfs.namenode.checkpoint.txns": "1000000",
+          "dfs.journalnode.edits.dir": "/data/1/hadoop/hdfs/journal",
+          "dfs.namenode.accesstime.precision": "0",
+          "dfs.ha.namenodes.chelsea": "nn1,nn2",
+          "dfs.namenode.safemode.threshold-pct": "1",
+          "dfs.namenode.checkpoint.period": "21600",
+          "dfs.ha.automatic-failover.enabled": "true"
+        }
+      }
+    },
+    {
+      "yarn-site": {
+        "properties": {
+          "yarn.resourcemanager.zk-address": "%HOSTGROUP::worker1%:2181,%HOSTGROUP::worker2%:2181,%HOSTGROUP::worker3%:2181",
+          "yarn.resourcemanager.webapp.address.rm2": "%HOSTGROUP::master2%:8088",
+          "yarn.resourcemanager.address": "%HOSTGROUP::master1%:8050",
+          "yarn.resourcemanager.webapp.address.rm1": "%HOSTGROUP::master1%:8088",
+          "yarn.timeline-service.leveldb-timeline-store.start-time-read-cache-size": "10000",
+          "yarn.resourcemanager.ha.rm-ids": "rm1,rm2",
+          "yarn.resourcemanager.ha.automatic-failover.zk-base-path": "/yarn-leader-election",
+          "yarn.resourcemanager.scheduler.monitor.enable": "true",
+          "yarn.resourcemanager.admin.address": "%HOSTGROUP::master1%:8141",
+          "yarn.resourcemanager.bind-host": "0.0.0.0",
+          "yarn.resourcemanager.resource-tracker.address": "%HOSTGROUP::master1%:8025",
+          "yarn.nodemanager.delete.debug-delay-sec": "3600",
+          "yarn.nodemanager.address": "0.0.0.0:25454",
+          "yarn.resourcemanager.webapp.address": "%HOSTGROUP::master1%:8088",
+          "yarn.nodemanager.resource.memory-mb": "98304",
+          "yarn.scheduler.minimum-allocation-mb": "3072",
+          "yarn.scheduler.maximum-allocation-mb": "8192",
+          "yarn.resourcemanager.ha.enabled": "true",
+          "yarn.resourcemanager.hostname": "%HOSTGROUP::master1%",
+          "yarn.resourcemanager.cluster-id": "yarn-cluster",
+          "yarn.timeline-service.leveldb-timeline-store.read-cache-size": "104857600",
+          "yarn.resourcemanager.scheduler.class": "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler",
+          "yarn.timeline-service.client.max-retries": "30",
+          "yarn.nodemanager.local-dirs": "/data/1/hadoop/yarn/local,/data/2/hadoop/yarn/local,/data/3/hadoop/yarn/local",
+          "yarn.nodemanager.log-dirs": "/data/1/hadoop/yarn/local,/data/2/hadoop/yarn/local,/data/3/hadoop/yarn/local",
+          "yarn.nodemanager.recovery.enabled": "true",
+          "yarn.timeline-service.bind-host": "0.0.0.0",
+          "yarn.resourcemanager.am.max-attempts": "20",
+          "yarn.resourcemanager.webapp.https.address": "%HOSTGROUP::master1%:8090",
+          "yarn.resourcemanager.hostname.rm2": "%HOSTGROUP::master2%",
+          "yarn.resourcemanager.hostname.rm1": "%HOSTGROUP::master1%",
+          "yarn.resourcemanager.work-preserving-recovery.enabled": "true",
+          "yarn.resourcemanager.recovery.enabled": "true",
+          "yarn.resourcemanager.store.class": "org.apache.hadoop.yarn.server.resourcemanager.recovery.ZKRMStateStore",
+          "yarn.resourcemanager.scheduler.address": "%HOSTGROUP::master1%:8030",
+          "yarn.timeline-service.leveldb-state-store.path": "/data/1/hadoop/yarn/timeline",
+          "yarn.timeline-service.leveldb-timeline-store.path": "/data/1/hadoop/yarn/timeline"
+        }
+      }
+    },
+    {
+      "oozie-env": {
+        "oozie_hostname": "%HOSTGROUP::worker3%",
+        "oozie_database": "Existing MySQL Database",
+        "oozie_ambari_database" : "MySQL",
+        "oozie_existing_mysql_database" : "MySQL",
+        "oozie_user" : "oozie"
+      }
+    },
+    {
+      "oozie-site": {
+        "oozie.db.schema.name" : "oozie",
+        "oozie.service.JPAService.jdbc.username": "oozie",
+        "oozie.service.JPAService.jdbc.password": "oozie",
+        "oozie.service.JPAService.jdbc.driver": "com.mysql.jdbc.Driver",
+        "oozie.service.JPAService.jdbc.url": "jdbc:mysql://localhost:3306/oozie",
+        "oozie.service.HadoopAccessorService.supported.filesystems": "*",
+        "oozie.authentication.kerberos.principal": "*",
+        "oozie.service.WorkflowAppService.WorkflowDefinitionMaxLength": "1000000"
+      }
+    },
+    {
+      "ams-hbase-site": {
+        "properties": {
+          "hbase.rootdir": "file:///data/1/lib/ambari-metrics-collector/hbase"
+        }
+      }
+    },
+    {
+      "infra-solr-env": {
+        "properties": {
+          "infra_solr_datadir": "/data/1/ambari_infra_solr/data"
+        }
+      }
+    },
+    {
+      "hbase-site": {
+        "properties": {
+          "hbase.client.scanner.timeout.period": "300000",
+          "phoenix.query.timeoutMs": "1200000",
+          "hbase.rpc.timeout": "300000",
+          "hbase.master.loadbalance.bytable": "true",
+          "hbase.zookeeper.property.tickTime": "6000",
+          "phoenix.coprocessor.maxServerCacheTimeToLiveMs": "300000",
+          "phoenix.query.maxServerCacheBytes": "304857600"
+        }
+      }
+    },
+    {
+      "webhcat-site": {
+        "properties": {
+          "templeton.port": "20111"
+        }
+      }
+    },
+    {
+      "storm-env": {
+        "properties": {
+          "jmxremote_port": "26431"
+        }
+      }
+    },
+    {
+      "ams-site": {
+        "properties": {
+          "timeline.metrics.service.rpc.address": "0.0.0.0:20200"
+        }
+      }
+    },
+    {
+      "hive-site": {
+        "properties": {
+          "hive.support.concurrency": "true",
+          "hive.tez.container.size": "8192",
+          "hive.compactor.initiator.on": "true",
+          "hive.auto.convert.join.noconditionaltask.size": "1431655765",
+          "hive.compactor.worker.threads": "5",
+          "hive.txn.manager": "org.apache.hadoop.hive.ql.lockmgr.DbTxnManager",
+          "hive.exec.dynamic.partition.mode": "nonstrict",
+          "javax.jdo.option.ConnectionDriverName": "com.mysql.jdbc.Driver",
+          "javax.jdo.option.ConnectionURL": "jdbc:mysql://localhost:3306/hive",
+          "ambari.hive.db.schema.name": "hive",
+          "javax.jdo.option.ConnectionUserName": "hive",
+          "javax.jdo.option.ConnectionPassword": "hive",
+          "hive.security.authorization.enabled" : "true"
+        }
+      }
+    },
+    {
+      "hive-env": {
+        "properties": {
+          "hive_txn_acid": "on",
+          "hive.client.heapsize": "4096",
+          "hive.metastore.heapsize": "8192",
+          "hive.heapsize": "16384",
+          "hive_database" : "Existing MySQL Database",
+          "hive_database_name" : "hive",
+          "hive_database_type" : "mysql",
+          "hive_existing_mysql_database" : "MySQL",
+          "hive_ambari_database": "MySQL",
+          "hive_user" : "hive",
+          "hive_metastore_user_passwd": "hive"
+        }
+      }
+    },
+    {
+      "mapred-site": {
+        "properties": {
+          "mapreduce.task.io.sort.mb": "2047",
+          "mapreduce.map.memory.mb": "8192",
+          "mapreduce.am.max-attempts": "2",
+          "yarn.app.mapreduce.am.command-opts": "-Xmx6553m -Dhdp.version=${hdp.version}",
+          "mapreduce.reduce.memory.mb": "8192",
+          "mapreduce.map.java.opts": "-Xmx6553m",
+          "yarn.app.mapreduce.am.resource.mb": "2560",
+          "mapreduce.reduce.java.opts": "-Xmx6553m"
+        }
+      }
+    },
+    {
+      "tez-site": {
+        "properties": {
+          "tez.task.resource.memory.mb": "8192",
+          "tez.runtime.io.sort.mb": "2162",
+          "tez.am.resource.memory.mb": "8192",
+          "tez.am.max.app.attempts": "2"
+        }
+      }
+    },
+    {
+      "ams-grafana-env": {
+        "properties": {
+          "metrics_grafana_password": "admin"
+        }
+      }
+    },
+    {
+      "hbase-env": {
+        "properties": {
+          "phoenix_sql_enabled": "true"
+        }
+      }
+    },
+    {
+      "capacity-scheduler": {
+        "properties": {
+          "yarn.scheduler.capacity.root.llap.minimum-user-limit-percent": "100",
+          "yarn.scheduler.capacity.maximum-am-resource-percent": "0.2",
+          "yarn.scheduler.capacity.root.acl_administer_queue": "yarn",
+          "yarn.scheduler.capacity.root.llap.acl_submit_applications": "hive",
+          "yarn.scheduler.capacity.root.llap.acl_administer_queue": "hive",
+          "yarn.scheduler.capacity.root.llap.maximum-am-resource-percent": "1",
+          "yarn.scheduler.capacity.root.queues": "default,llap",
+          "yarn.scheduler.capacity.root.default.acl_submit_applications": "yarn",
+          "yarn.scheduler.capacity.root.default.acl_administer_queue": "yarn",
+          "yarn.scheduler.capacity.maximum-applications": "10000",
+          "yarn.scheduler.capacity.queue-mappings-override.enable": "false",
+          "yarn.scheduler.capacity.root.llap.state": "RUNNING",
+          "yarn.scheduler.capacity.root.default.state": "RUNNING",
+          "yarn.scheduler.capacity.root.llap.maximum-capacity": "50",
+          "yarn.scheduler.capacity.root.accessible-node-labels": "*",
+          "yarn.scheduler.capacity.resource-calculator": "org.apache.hadoop.yarn.util.resource.DefaultResourceCalculator",
+          "yarn.scheduler.capacity.root.default.capacity": "50",
+          "yarn.scheduler.capacity.root.llap.ordering-policy": "fifo",
+          "yarn.scheduler.capacity.root.default.user-limit-factor": "1",
+          "yarn.scheduler.capacity.root.capacity": "100",
+          "yarn.scheduler.capacity.root.default.maximum-capacity": "50",
+          "yarn.scheduler.capacity.node-locality-delay": "40",
+          "yarn.scheduler.capacity.root.llap.user-limit-factor": "1",
+          "yarn.scheduler.capacity.root.llap.capacity": "50"
+        }
+      }
+    },
+    {
+      "hive-interactive-env": {
+        "properties": {
+          "llap_heap_size": "4096",
+          "enable_hive_interactive": "true",
+          "slider_am_container_mb": "1024",
+          "llap_queue_capacity": "80",
+          "num_llap_nodes": "4"
+        }
+      }
+    },
+    {
+      "hive-interactive-site": {
+        "properties": {
+          "hive.llap.client.consistent.splits": "true",
+          "hive.llap.daemon.yarn.container.mb": "8192",
+          "hive.llap.io.use.lrfu": "true",
+          "hive.llap.io.memory.size": "4096",
+          "hive.vectorized.execution.mapjoin.native.enabled": "true",
+          "hive.server2.tez.default.queues": "default",
+          "hive.metastore.event.listeners": "",
+          "hive.vectorized.execution.reduce.enabled": "true",
+          "hive.llap.task.scheduler.locality.delay": "-1",
+          "hive.server2.tez.sessions.per.default.queue": "3",
+          "hive.server2.webui.use.ssl": "false",
+          "hive.llap.management.rpc.port": "15004",
+          "hive.server2.thrift.http.port": "10501",
+          "hive.llap.daemon.rpc.port": "15001",
+          "hive.execution.mode": "llap",
+          "hive.llap.io.enabled": "true",
+          "hive.exec.orc.split.strategy": "HYBRID",
+          "hive.llap.daemon.allow.permanent.fns": "false",
+          "hive.vectorized.execution.mapjoin.native.fast.hashtable.enabled": "true",
+          "hive.prewarm.enabled": "false",
+          "hive.optimize.dynamic.partition.hashjoin": "true",
+          "hive.mapjoin.hybridgrace.hashtable": "false",
+          "hive.execution.engine": "tez",
+          "llap.shuffle.connection-keep-alive.timeout": "60",
+          "hive.llap.object.cache.enabled": "true",
+          "hive.llap.execution.mode": "all",
+          "hive.llap.daemon.yarn.shuffle.port": "15551",
+          "hive.llap.daemon.queue.name": "llap",
+          "hive.metastore.uris": "",
+          "hive.llap.daemon.vcpus.per.instance": "${hive.llap.daemon.num.executors}",
+          "hive.llap.io.memory.mode": "",
+          "hive.server2.thrift.port": "10500",
+          "hive.driver.parallel.compilation": "true",
+          "hive.tez.input.generate.consistent.splits": "true",
+          "hive.tez.exec.print.summary": "true",
+          "hive.vectorized.execution.mapjoin.minmax.enabled": "true",
+          "hive.server2.enable.doAs": "false",
+          "hive.server2.zookeeper.namespace": "hiveserver2-hive2",
+          "hive.tez.bucket.pruning": "true",
+          "hive.llap.io.threadpool.size": "19",
+          "llap.shuffle.connection-keep-alive.enable": "true",
+          "hive.llap.daemon.service.hosts": "@llap0",
+          "hive.llap.auto.allow.uber": "false",
+          "hive.server2.tez.initialize.default.sessions": "true",
+          "hive.server2.webui.port": "10502",
+          "hive.llap.daemon.task.scheduler.enable.preemption": "true",
+          "hive.llap.daemon.num.executors": "19"
+        }
+      }
+    },
+    {
+      "kafka-broker": {
+        "properties": {
+          "auto.create.topics.enable": "true",
+          "delete.topic.enable": "true",
+          "listeners": "PLAINTEXT://localhost:6667",
+          "security.inter.broker.protocol": "PLAINTEXT",
+          "log.dirs": "/data/1/kafka-logs,/data/2/kafka-logs,/data/3/kafka-logs"
+        }
+      }
+    },
+    {
+      "admin-properties": {
+        "properties": {
+          "DB_FLAVOR": "MYSQL",
+          "db_user": "rangerdba",
+          "db_password": "password",
+          "db_root_user": "rangerdba",
+          "db_host": "localhost",
+          "db_root_password": "password",
+          "policymgr_external_url": "http://%HOSTGROUP::master2%:6080"
+        }
+      }
+    },
+    {
+      "ranger-admin-site": {
+        "properties": {
+          "ranger.audit.source.type": "solr",
+          "ranger.jpa.jdbc.driver": "com.mysql.jdbc.Driver",
+          "ranger.service.http.enabled": "true",
+          "ranger.jpa.jdbc.url": "jdbc:mysql://localhost:3306/ranger"
+        }
+      }
+    },
+    {
+      "ranger-env": {
+        "properties": {
+          "ranger_privelege_user_jdbc_url": "jdbc:mysql://localhost:3306",
+          "keyadmin_user_password": "Hortonworks@123",
+          "rangerusersync_user_password": "Hortonworks@123",
+          "rangertagsync_user_password": "Hortonworks@123",
+          "ranger_admin_password": "Hortonworks@123",
+          "admin_password":"Hortonworks@123",
+          "is_solrCloud_enabled": "true",
+          "is_external_solrCloud_enabled": "false",
+          "is_external_solrCloud_kerberos": "false",
+          "xasecure.audit.destination.hdfs": "false",
+          "ranger-kafka-plugin-enabled": "Yes",
+          "ranger-hive-plugin-enabled": "Yes",
+          "ranger-hdfs-plugin-enabled": "Yes"
+        }
+      }
+    },
+    {
+      "ranger-ugsync-site": {
+        "properties": {
+          "ranger.usersync.source.impl.class": "org.apache.ranger.unixusersync.process.UnixUserGroupBuilder"
+        }
+      }
+    }
+  ],
+  "host_groups": [
+    {
+      "name": "master1",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "OOZIE_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        },
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "JOURNALNODE"
+        },
+        {
+          "name": "NAMENODE"
+        },
+        {
+          "name": "ZKFC"
+        },
+        {
+          "name": "APP_TIMELINE_SERVER"
+        },
+        {
+          "name": "RESOURCEMANAGER"
+        },
+        {
+          "name": "HISTORYSERVER"
+        },
+        {
+          "name": "ZEPPELIN_MASTER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "ATLAS_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "master2",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "OOZIE_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        },
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "HBASE_REGIONSERVER"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "JOURNALNODE"
+        },
+        {
+          "name": "NAMENODE"
+        },
+        {
+          "name": "ZKFC"
+        },
+        {
+          "name": "RESOURCEMANAGER"
+        },
+        {
+          "name": "HIVE_SERVER_INTERACTIVE"
+        },
+        {
+          "name": "WEBHCAT_SERVER"
+        },
+        {
+          "name": "HBASE_MASTER"
+        },
+        {
+          "name": "PHOENIX_QUERY_SERVER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "PIG"
+        },
+        {
+          "name": "ATLAS_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "worker1",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "OOZIE_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        },
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "HBASE_REGIONSERVER"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "ZOOKEEPER_SERVER"
+        },
+        {
+          "name": "KAFKA_BROKER"
+        },
+        {
+          "name": "JOURNALNODE"
+        },
+        {
+          "name": "HBASE_MASTER"
+        },
+        {
+          "name": "DRPC_SERVER"
+        },
+        {
+          "name": "METRICS_COLLECTOR"
+        },
+        {
+          "name": "METRICS_GRAFANA"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "INFRA_SOLR"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "PIG"
+        },
+        {
+          "name": "ATLAS_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "worker2",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "OOZIE_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        },
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "HBASE_REGIONSERVER"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "INFRA_SOLR"
+        },
+        {
+          "name": "SPARK2_JOBHISTORYSERVER"
+        },
+        {
+          "name": "SPARK2_THRIFTSERVER"
+        },
+        {
+          "name": "LIVY2_SERVER"
+        },
+        {
+          "name": "STORM_UI_SERVER"
+        },
+        {
+          "name": "NIMBUS"
+        },
+        {
+          "name": "ZOOKEEPER_SERVER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "KAFKA_BROKER"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "PIG"
+        },
+        {
+          "name": "ATLAS_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "worker3",
+      "configurations" : [],
+      "components": [
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "HBASE_CLIENT"
+        },
+        {
+          "name": "TEZ_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "OOZIE_CLIENT"
+        },
+        {
+          "name": "INFRA_SOLR_CLIENT"
+        },
+        {
+          "name": "SPARK2_CLIENT"
+        },
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "HBASE_REGIONSERVER"
+        },
+        {
+          "name": "ZOOKEEPER_SERVER"
+        },
+        {
+          "name": "SUPERVISOR"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "KAFKA_BROKER"
+        },
+        {
+          "name": "AMBARI_SERVER"
+        },
+        {
+          "name": "OOZIE_SERVER"
+        },
+        {
+          "name": "RANGER_ADMIN"
+        },
+        {
+          "name": "RANGER_USERSYNC"
+        },
+        {
+          "name": "HIVE_METASTORE"
+        },
+        {
+          "name": "HIVE_SERVER"
+        },
+        {
+          "name": "SLIDER"
+        },
+        {
+          "name": "PIG"
+        },
+        {
+          "name": "ATLAS_CLIENT"
+        },
+        {
+          "name": "ATLAS_SERVER"
+        },
+        {
+          "name": "OOZIE_CLIENT"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        }
+      ]
+    }
+  ],
+  "Blueprints": {
+    "stack_name": "HDP",
+    "stack_version": "2.6"
+  }
+}

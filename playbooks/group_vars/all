@@ -10,12 +10,12 @@ password:
 ## cluster configuration ##
 ###########################
 
-cluster_name: 'hcubehdp265'
+# cluster_name: 'hcubehdp265'
 
 ambari_version: '2.6.2.2'                                 # must be the 4-part full version number
 
 hdp_version: '2.6.5.0'                                    # must be the 4-part full version number
-hdp_build_number: '292'                                  # the HDP build number from docs.hortonworks.com (if set to 'auto', Ansible will try to get it from the repository)
+hdp_build_number: '292'                                   # the HDP build number from docs.hortonworks.com (if set to 'auto', Ansible will try to get it from the repository)
 
 hdf_version: '3.4.1.1'                                    # must be the 4-part full version number
 hdf_build_number: 'auto'                                  # the HDF build number from docs.hortonworks.com (if set to 'auto', Ansible will try to get it from the repository)
@@ -119,7 +119,7 @@ ranger_security_options:                                  # only used if RANGER_
 ##################################
 
 ambari_admin_password: 'admin'                            # the password for the Ambari admin user
-default_password: 'Cloudera@1234'                          # a default password for all required passwords which are not specified in the blueprint,
+default_password: 'Cloudera@1234'                         # a default password for all required passwords which are not specified in the blueprint,
                                                           # dependency: NiFi password needs to be at least 12 characters
 
 atlas_security_options:
@@ -182,7 +182,7 @@ base_tmp_dir: '/tmp'
 #############################
 
 blueprint_name: '{{ cluster_name }}_blueprint'            # the name of the blueprint as it will be stored in Ambari
-blueprint_file: 'hdp_265_50node.json'                    # the blueprint JSON file - 'blueprint_dynamic.j2' is a Jinja2 template that generates the required JSON
+blueprint_file: 'mlabadi_dlm_cluster.json'                # the blueprint JSON file - 'blueprint_dynamic.j2' is a Jinja2 template that generates the required JSON
 blueprint_dynamic:                                        # properties for the dynamic blueprint - these are only used by the 'blueprint_dynamic.j2' template to generate the JSON
   - host_group: "hdp-master"
     clients: ['ZOOKEEPER_CLIENT', 'HDFS_CLIENT', 'YARN_CLIENT', 'MAPREDUCE2_CLIENT', 'TEZ_CLIENT', 'PIG', 'SQOOP', 'HIVE_CLIENT', 'OOZIE_CLIENT', 'INFRA_SOLR_CLIENT', 'SPARK2_CLIENT']
