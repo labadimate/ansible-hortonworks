@@ -9,6 +9,9 @@
 # Copied from example-hdp-ha-2masters-solr
 
 cluster_name: 'hcubedlm265'
+ambari_version: '2.6.2.2-1'
+# Install openjdk on every node: yum install -i java-1.8.0-openjdk-devel
+java: 'openjdk'
 
 blueprint_name: '{{ cluster_name }}_blueprint'                  # the name of the blueprint as it will be stored in Ambari
 blueprint_file: 'mlabadi_dlm_cluster.json'                      # the blueprint JSON file - 'blueprint_dynamic.j2' is a Jinja2 template that generates the required JSON

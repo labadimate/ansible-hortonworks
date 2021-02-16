@@ -6,8 +6,8 @@
         "properties": {
           "realm": "CLOUDERA.COM",
           "kdc_type": "mit-kdc",
-          "kdc_hosts" : "vd1324.halxg.cloudera.com",
-          "admin_server_host" : "vd1324.halxg.cloudera.com",
+          "kdc_hosts" : "vd1328.halxg.cloudera.com",
+          "admin_server_host" : "vd1328.halxg.cloudera.com",
           "container_dn" : "",
           "ldap_url" : ""
         }
