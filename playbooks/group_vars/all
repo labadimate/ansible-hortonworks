@@ -10,9 +10,9 @@ password:
 ## cluster configuration ##
 ###########################
 
-# cluster_name: 'hcubehdp265'
+cluster_name: 'mlabadi-1-dlm-265'
 
-ambari_version: '2.6.2.2-1'                                 # must be the 4-part full version number
+ambari_version: '2.6.2.2'                                 # must be the 4-part full version number
 
 hdp_version: '2.6.5.0'                                    # must be the 4-part full version number
 hdp_build_number: '292'                                   # the HDP build number from docs.hortonworks.com (if set to 'auto', Ansible will try to get it from the repository)
@@ -23,7 +23,7 @@ hdf_build_number: 'auto'                                  # the HDF build number
 hdpsearch_version: '3.0.0'                                # must be the full version number
 hdpsearch_build_number: '100'                             # the HDP Search build number from docs.hortonworks.com
 
-repo_base_url: 'http://s3.amazonaws.com/dev.hortonworks.com'     # change this if using a Local Repository
+repo_base_url: 'https://archive.cloudera.com/p/'     # change this if using a Local Repository
 
 
 ###########################
@@ -39,7 +39,7 @@ timezone: UTC
 ## java configuration ##
 ########################
 
-java: 'embedded'                                          # can be set to 'embedded', 'openjdk' or 'oraclejdk'
+java: 'openjdk'                                          # can be set to 'embedded', 'openjdk' or 'oraclejdk'
 oraclejdk_options:                                        # only used when java is set to 'oraclejdk'
   base_folder: '/usr/java'                                # the folder where the Java package should be unpacked to
   tarball_location: '/tmp/jdk-8u181-linux-x64.tar.gz'     # the location of the tarball on the remote system or on the Ansible controller
